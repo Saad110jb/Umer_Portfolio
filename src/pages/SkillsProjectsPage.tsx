@@ -51,11 +51,11 @@ export const SkillsProjectsPage: React.FC = () => {
       name: 'Dynamics 365 Enterprise',
       subtitle: 'CE, Sales, Service, Marketing',
       level: 'Principal',
-      levelBadgeClass: 'bg-blue-100 text-blue-800 border border-blue-300 font-bold',
+      levelBadgeClass: 'bg-blue-100 dark:bg-blue-950/80 text-blue-800 dark:text-blue-300 border border-blue-300 dark:border-blue-800 font-bold',
       focus: 'Multi-Tenant CRM Architecture',
       years: '11+ yrs',
       icon: 'view_quilt',
-      iconColorClass: 'text-blue-600',
+      iconColorClass: 'text-blue-600 dark:text-blue-400',
     },
     {
       id: 'power-apps',
@@ -63,11 +63,11 @@ export const SkillsProjectsPage: React.FC = () => {
       name: 'Power Apps Suite',
       subtitle: 'Model-Driven & Complex Canvas',
       level: 'Architect',
-      levelBadgeClass: 'bg-blue-100 text-blue-800 border border-blue-300 font-bold',
+      levelBadgeClass: 'bg-blue-100 dark:bg-blue-950/80 text-blue-800 dark:text-blue-300 border border-blue-300 dark:border-blue-800 font-bold',
       focus: 'Enterprise Citizen-Pro Mesh',
       years: '9+ yrs',
       icon: 'widgets',
-      iconColorClass: 'text-blue-600',
+      iconColorClass: 'text-blue-600 dark:text-blue-400',
     },
     {
       id: 'power-automate',
@@ -75,11 +75,11 @@ export const SkillsProjectsPage: React.FC = () => {
       name: 'Power Automate & RPA',
       subtitle: 'Cloud Flows & Desktop RPA',
       level: 'Lead',
-      levelBadgeClass: 'bg-blue-100 text-blue-800 border border-blue-300 font-bold',
+      levelBadgeClass: 'bg-blue-100 dark:bg-blue-950/80 text-blue-800 dark:text-blue-300 border border-blue-300 dark:border-blue-800 font-bold',
       focus: 'High-Volume Async Queuing',
       years: '8+ yrs',
       icon: 'schema',
-      iconColorClass: 'text-blue-600',
+      iconColorClass: 'text-blue-600 dark:text-blue-400',
     },
     {
       id: 'dataverse',
@@ -87,11 +87,11 @@ export const SkillsProjectsPage: React.FC = () => {
       name: 'Microsoft Dataverse',
       subtitle: 'Complex RBAC & Elastic Tables',
       level: 'Architect',
-      levelBadgeClass: 'bg-blue-100 text-blue-800 border border-blue-300 font-bold',
+      levelBadgeClass: 'bg-blue-100 dark:bg-blue-950/80 text-blue-800 dark:text-blue-300 border border-blue-300 dark:border-blue-800 font-bold',
       focus: 'Enterprise Schema & Virtual Tables',
       years: '10+ yrs',
       icon: 'database',
-      iconColorClass: 'text-blue-600',
+      iconColorClass: 'text-blue-600 dark:text-blue-400',
     },
     {
       id: 'power-bi',
@@ -99,11 +99,11 @@ export const SkillsProjectsPage: React.FC = () => {
       name: 'Power BI & Fabric',
       subtitle: 'Executive KPI & Row-Level Security',
       level: 'Expert',
-      levelBadgeClass: 'bg-blue-100 text-blue-800 border border-blue-300 font-bold',
+      levelBadgeClass: 'bg-blue-100 dark:bg-blue-950/80 text-blue-800 dark:text-blue-300 border border-blue-300 dark:border-blue-800 font-bold',
       focus: 'High-Concurrency Real-Time DAX',
       years: '7+ yrs',
       icon: 'bar_chart',
-      iconColorClass: 'text-blue-600',
+      iconColorClass: 'text-blue-600 dark:text-blue-400',
     },
     {
       id: 'power-pages',
@@ -111,11 +111,11 @@ export const SkillsProjectsPage: React.FC = () => {
       name: 'Power Pages Portals',
       subtitle: 'GovTech Resident-Facing Portals',
       level: 'Lead',
-      levelBadgeClass: 'bg-blue-100 text-blue-800 border border-blue-300 font-bold',
+      levelBadgeClass: 'bg-blue-100 dark:bg-blue-950/80 text-blue-800 dark:text-blue-300 border border-blue-300 dark:border-blue-800 font-bold',
       focus: 'Entra ID / B2C Federation',
       years: '6+ yrs',
       icon: 'public',
-      iconColorClass: 'text-blue-600',
+      iconColorClass: 'text-blue-600 dark:text-blue-400',
     },
     {
       id: 'pcf-framework',
@@ -123,11 +123,11 @@ export const SkillsProjectsPage: React.FC = () => {
       name: 'PCF Custom Framework',
       subtitle: 'React/TS Component Library',
       level: 'Master',
-      levelBadgeClass: 'bg-blue-100 text-blue-800 border border-blue-300 font-bold',
+      levelBadgeClass: 'bg-blue-100 dark:bg-blue-950/80 text-blue-800 dark:text-blue-300 border border-blue-300 dark:border-blue-800 font-bold',
       focus: 'High-Performance Custom Controls',
       years: '5+ yrs',
       icon: 'code_blocks',
-      iconColorClass: 'text-blue-600',
+      iconColorClass: 'text-blue-600 dark:text-blue-400',
     },
 
     // Architecture & DevOps
@@ -137,7 +137,7 @@ export const SkillsProjectsPage: React.FC = () => {
       name: 'Center of Excellence (CoE)',
       subtitle: 'Enterprise Guardrails & Auditing',
       level: 'Director',
-      levelBadgeClass: 'bg-emerald-100 text-emerald-900 border border-emerald-300 font-bold',
+      levelBadgeClass: 'bg-emerald-100 dark:bg-emerald-950/80 text-emerald-900 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800 font-bold',
       focus: 'DLP Compliance & Policy Shields',
       years: '6+ yrs',
       icon: 'account_tree',
@@ -149,11 +149,11 @@ export const SkillsProjectsPage: React.FC = () => {
       name: 'Azure DevOps & ALM',
       subtitle: 'Managed Solution CI/CD Pipelines',
       level: 'Lead',
-      levelBadgeClass: 'bg-emerald-100 text-emerald-900 border border-emerald-300 font-bold',
+      levelBadgeClass: 'bg-emerald-100 dark:bg-emerald-950/80 text-emerald-900 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800 font-bold',
       focus: 'Zero-Downtime Release Trains',
       years: '8+ yrs',
       icon: 'hub',
-      iconColorClass: 'text-emerald-600',
+      iconColorClass: 'text-emerald-600 dark:text-emerald-400',
     },
     {
       id: 'hybrid-gateway',
@@ -161,11 +161,11 @@ export const SkillsProjectsPage: React.FC = () => {
       name: 'Hybrid On-Prem Gateways',
       subtitle: 'Secure On-Prem to Cloud Bridges',
       level: 'Architect',
-      levelBadgeClass: 'bg-emerald-100 text-emerald-900 border border-emerald-300 font-bold',
+      levelBadgeClass: 'bg-emerald-100 dark:bg-emerald-950/80 text-emerald-900 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800 font-bold',
       focus: 'DMZ Enterprise Security Gateway',
       years: '7+ yrs',
       icon: 'dns',
-      iconColorClass: 'text-emerald-600',
+      iconColorClass: 'text-emerald-600 dark:text-emerald-400',
     },
 
     // Full-Stack & Backend
@@ -175,11 +175,11 @@ export const SkillsProjectsPage: React.FC = () => {
       name: 'React 18 & Next.js 14',
       subtitle: 'Server Components & Responsive UI',
       level: 'Lead',
-      levelBadgeClass: 'bg-indigo-100 text-indigo-900 border border-indigo-300 font-bold',
+      levelBadgeClass: 'bg-indigo-100 dark:bg-indigo-950/80 text-indigo-900 dark:text-indigo-300 border border-indigo-300 dark:border-indigo-800 font-bold',
       focus: 'High-Concurrency Web Apps',
       years: '6+ yrs',
       icon: 'devices',
-      iconColorClass: 'text-indigo-600',
+      iconColorClass: 'text-indigo-600 dark:text-indigo-400',
     },
     {
       id: 'python-fastapi',
@@ -187,11 +187,11 @@ export const SkillsProjectsPage: React.FC = () => {
       name: 'Python 3.11 & FastAPI',
       subtitle: 'Async Microservice Endpoints',
       level: 'Architect',
-      levelBadgeClass: 'bg-indigo-100 text-indigo-900 border border-indigo-300 font-bold',
+      levelBadgeClass: 'bg-indigo-100 dark:bg-indigo-950/80 text-indigo-900 dark:text-indigo-300 border border-indigo-300 dark:border-indigo-800 font-bold',
       focus: 'High-Throughput REST APIs',
       years: '5+ yrs',
       icon: 'terminal',
-      iconColorClass: 'text-indigo-600',
+      iconColorClass: 'text-indigo-600 dark:text-indigo-400',
     },
     {
       id: 'csharp-net',
@@ -199,11 +199,11 @@ export const SkillsProjectsPage: React.FC = () => {
       name: 'C# .NET Core & Plugins',
       subtitle: 'Dynamics Plugins & Azure Functions',
       level: 'Principal',
-      levelBadgeClass: 'bg-indigo-100 text-indigo-900 border border-indigo-300 font-bold',
+      levelBadgeClass: 'bg-indigo-100 dark:bg-indigo-950/80 text-indigo-900 dark:text-indigo-300 border border-indigo-300 dark:border-indigo-800 font-bold',
       focus: 'Asynchronous Event Handlers',
       years: '10+ yrs',
       icon: 'code',
-      iconColorClass: 'text-indigo-600',
+      iconColorClass: 'text-indigo-600 dark:text-indigo-400',
     },
     {
       id: 'docker-containers',
@@ -211,11 +211,11 @@ export const SkillsProjectsPage: React.FC = () => {
       name: 'Docker & Microservices',
       subtitle: 'Containerization & Compose',
       level: 'Lead',
-      levelBadgeClass: 'bg-indigo-100 text-indigo-900 border border-indigo-300 font-bold',
+      levelBadgeClass: 'bg-indigo-100 dark:bg-indigo-950/80 text-indigo-900 dark:text-indigo-300 border border-indigo-300 dark:border-indigo-800 font-bold',
       focus: 'Decoupled Multi-Container Stack',
       years: '5+ yrs',
       icon: 'deployed_code',
-      iconColorClass: 'text-indigo-600',
+      iconColorClass: 'text-indigo-600 dark:text-indigo-400',
     },
 
     // Applied AI & Automation
@@ -229,7 +229,7 @@ export const SkillsProjectsPage: React.FC = () => {
       focus: 'Real-Time Conversational Telephony',
       years: '3+ yrs',
       icon: 'settings_voice',
-      iconColorClass: 'text-blue-600',
+      iconColorClass: 'text-blue-600 dark:text-blue-400',
     },
     {
       id: 'openai-gpt-llm',
@@ -241,7 +241,7 @@ export const SkillsProjectsPage: React.FC = () => {
       focus: 'Transcript Extraction & Lead Scoring',
       years: '3+ yrs',
       icon: 'psychology',
-      iconColorClass: 'text-blue-600',
+      iconColorClass: 'text-blue-600 dark:text-blue-400',
     },
     {
       id: 'rag-langchain',
@@ -253,7 +253,7 @@ export const SkillsProjectsPage: React.FC = () => {
       focus: 'Enterprise Document Q&A Systems',
       years: '3+ yrs',
       icon: 'find_in_page',
-      iconColorClass: 'text-blue-600',
+      iconColorClass: 'text-blue-600 dark:text-blue-400',
     },
     {
       id: 'n8n-workflow-automation',
@@ -265,7 +265,7 @@ export const SkillsProjectsPage: React.FC = () => {
       focus: 'Event-Driven Workflow Automation',
       years: '4+ yrs',
       icon: 'conversion_path',
-      iconColorClass: 'text-blue-600',
+      iconColorClass: 'text-blue-600 dark:text-blue-400',
     },
 
     // Delivery Leadership
@@ -275,11 +275,11 @@ export const SkillsProjectsPage: React.FC = () => {
       name: 'Agile & SAFe 6.0 Leadership',
       subtitle: 'Bi-Weekly Sprint Cadences',
       level: 'Director',
-      levelBadgeClass: 'bg-slate-200 text-slate-900 font-bold',
+      levelBadgeClass: 'bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-slate-200 border border-slate-300 dark:border-slate-700 font-bold',
       focus: 'Squad Management (8–15 Engineers)',
       years: '8+ yrs',
       icon: 'groups',
-      iconColorClass: 'text-slate-800',
+      iconColorClass: 'text-slate-800 dark:text-slate-300',
     },
     {
       id: 'presales-rfp-blueprints',
@@ -287,11 +287,11 @@ export const SkillsProjectsPage: React.FC = () => {
       name: 'Pre-Sales & RFP Blueprints',
       subtitle: 'Tender Blueprints & PoC Builds',
       level: 'Principal',
-      levelBadgeClass: 'bg-slate-200 text-slate-900 font-bold',
+      levelBadgeClass: 'bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-slate-200 border border-slate-300 dark:border-slate-700 font-bold',
       focus: '$12M+ Tenders Won',
       years: '7+ yrs',
       icon: 'description',
-      iconColorClass: 'text-slate-800',
+      iconColorClass: 'text-slate-800 dark:text-slate-300',
     }
   ];
 
@@ -502,111 +502,111 @@ export const SkillsProjectsPage: React.FC = () => {
   });
 
   return (
-    <div className="w-full bg-surface min-h-screen text-on-surface">
+    <div className="w-full min-h-screen text-slate-900 dark:text-slate-100 transition-colors duration-300">
       {/* Top Ambient Glow */}
       <div className="relative w-full overflow-hidden">
-        <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[900px] h-96 bg-gradient-to-b from-blue-100/50 via-slate-100/30 to-transparent blur-3xl pointer-events-none -z-10" />
+        <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[900px] h-96 bg-gradient-to-b from-blue-100/50 via-slate-100/30 to-transparent dark:from-blue-900/20 dark:via-slate-900/10 dark:to-transparent blur-3xl pointer-events-none -z-10" />
 
         {/* Section 1: Header, Breadcrumbs & Executive Metrics */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-12">
           {/* Breadcrumbs */}
-          <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs text-slate-500 mb-4 font-mono">
-            <Link to="/" className="hover:text-blue-600 transition-colors flex items-center gap-1 font-bold">
+          <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 mb-4 font-mono">
+            <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors flex items-center gap-1 font-bold">
               <span className="material-symbols-outlined text-sm">home</span>
               Home
             </Link>
-            <span className="text-slate-300">/</span>
-            <span className="text-slate-900 font-bold">Skills & Projects</span>
+            <span className="text-slate-300 dark:text-slate-700">/</span>
+            <span className="text-slate-900 dark:text-white font-bold">Skills & Projects</span>
           </nav>
 
           {/* Eyebrow + Primary H1 */}
           <div className="flex flex-col gap-3 max-w-4xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-600 font-bold w-fit">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800/60 text-blue-600 dark:text-blue-400 font-bold w-fit">
               <span className="material-symbols-outlined text-base">verified</span>
               <span className="font-mono text-xs uppercase tracking-wider">
                 Capabilities & Technical Portfolio
               </span>
             </div>
-            <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl text-slate-900 font-extrabold tracking-tight">
+            <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl text-slate-900 dark:text-white font-extrabold tracking-tight">
               Enterprise Architecture, Applied AI & Technical Skills
             </h1>
-            <p className="text-base sm:text-lg text-slate-600 max-w-3xl leading-relaxed">
+            <p className="text-base sm:text-lg text-slate-600 dark:text-slate-400 max-w-3xl leading-relaxed">
               Over a decade orchestrating sovereign government digital transformations, mission-critical Power Platform & Dynamics 365 enterprise ecosystems, fault-tolerant cloud microservices, and applied cognitive AI systems.
             </p>
           </div>
 
           {/* Quick Metrics Bar (Bento Grid) */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
-            <div className="bg-white p-5 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition-all">
+            <div className="bg-white dark:bg-slate-900/90 p-5 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 hover:shadow-md transition-all">
               <div className="flex items-center justify-between">
-                <span className="font-mono text-[10px] text-slate-400 font-bold uppercase">PRACTICE DOMAINS</span>
-                <span className="material-symbols-outlined text-blue-600 text-xl">domain</span>
+                <span className="font-mono text-[10px] text-slate-400 dark:text-slate-500 font-bold uppercase">PRACTICE DOMAINS</span>
+                <span className="material-symbols-outlined text-blue-600 dark:text-blue-400 text-xl">domain</span>
               </div>
-              <p className="font-heading text-3xl font-extrabold text-slate-900 mt-1">5</p>
-              <span className="text-xs text-slate-600 font-medium">Core Specializations</span>
+              <p className="font-heading text-3xl font-extrabold text-slate-900 dark:text-white mt-1">5</p>
+              <span className="text-xs text-slate-600 dark:text-slate-400 font-medium">Core Specializations</span>
             </div>
 
-            <div className="bg-white p-5 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition-all">
+            <div className="bg-white dark:bg-slate-900/90 p-5 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 hover:shadow-md transition-all">
               <div className="flex items-center justify-between">
-                <span className="font-mono text-[10px] text-slate-400 font-bold uppercase">PORTFOLIO TRACK</span>
-                <span className="material-symbols-outlined text-blue-600 text-xl">stacks</span>
+                <span className="font-mono text-[10px] text-slate-400 dark:text-slate-500 font-bold uppercase">PORTFOLIO TRACK</span>
+                <span className="material-symbols-outlined text-blue-600 dark:text-blue-400 text-xl">stacks</span>
               </div>
-              <p className="font-heading text-3xl font-extrabold text-blue-600 mt-1">40+</p>
-              <span className="text-xs text-slate-600 font-medium">Enterprise Deployments</span>
+              <p className="font-heading text-3xl font-extrabold text-blue-600 dark:text-blue-400 mt-1">40+</p>
+              <span className="text-xs text-slate-600 dark:text-slate-400 font-medium">Enterprise Deployments</span>
             </div>
 
-            <div className="bg-white p-5 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition-all">
+            <div className="bg-white dark:bg-slate-900/90 p-5 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 hover:shadow-md transition-all">
               <div className="flex items-center justify-between">
-                <span className="font-mono text-[10px] text-slate-400 font-bold uppercase">GOVERNANCE & SLA</span>
-                <span className="material-symbols-outlined text-emerald-600 text-xl">verified_user</span>
+                <span className="font-mono text-[10px] text-slate-400 dark:text-slate-500 font-bold uppercase">GOVERNANCE & SLA</span>
+                <span className="material-symbols-outlined text-emerald-600 dark:text-emerald-400 text-xl">verified_user</span>
               </div>
-              <p className="font-heading text-3xl font-extrabold text-emerald-600 mt-1">100%</p>
-              <span className="text-xs text-slate-600 font-medium">On-Time Sprint Milestones</span>
+              <p className="font-heading text-3xl font-extrabold text-emerald-600 dark:text-emerald-400 mt-1">100%</p>
+              <span className="text-xs text-slate-600 dark:text-slate-400 font-medium">On-Time Sprint Milestones</span>
             </div>
 
-            <div className="bg-white p-5 rounded-xl shadow-sm border border-slate-200 hover:shadow-md transition-all">
+            <div className="bg-white dark:bg-slate-900/90 p-5 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 hover:shadow-md transition-all">
               <div className="flex items-center justify-between">
-                <span className="font-mono text-[10px] text-slate-400 font-bold uppercase">ALM STANDARD</span>
-                <span className="material-symbols-outlined text-indigo-600 text-xl">hub</span>
+                <span className="font-mono text-[10px] text-slate-400 dark:text-slate-500 font-bold uppercase">ALM STANDARD</span>
+                <span className="material-symbols-outlined text-indigo-600 dark:text-indigo-400 text-xl">hub</span>
               </div>
-              <p className="font-heading text-3xl font-extrabold text-indigo-600 mt-1">0-Debt</p>
-              <span className="text-xs text-slate-600 font-medium">Managed Solutions Only</span>
+              <p className="font-heading text-3xl font-extrabold text-indigo-600 dark:text-indigo-400 mt-1">0-Debt</p>
+              <span className="text-xs text-slate-600 dark:text-slate-400 font-medium">Managed Solutions Only</span>
             </div>
           </div>
         </section>
       </div>
 
       {/* Section 2: Interactive Competency Matrix & Skills Section */}
-      <section className="w-full bg-slate-100/70 py-12 border-y border-slate-200">
+      <section className="w-full bg-slate-100/70 dark:bg-slate-900/50 py-12 border-y border-slate-200 dark:border-slate-800 transition-colors">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
           
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="space-y-1 max-w-xl">
-              <span className="font-mono text-xs text-slate-500 uppercase tracking-wider font-bold">
+              <span className="font-mono text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider font-bold">
                 Skill Taxonomy & Accreditations
               </span>
-              <h2 className="font-heading text-2xl sm:text-3xl text-slate-900 font-extrabold">
+              <h2 className="font-heading text-2xl sm:text-3xl text-slate-900 dark:text-white font-extrabold">
                 Interactive Competency Matrix
               </h2>
-              <p className="text-sm text-slate-600 font-normal">
+              <p className="text-sm text-slate-600 dark:text-slate-400 font-normal">
                 Cross-functional mastery across Microsoft Business Applications, Azure cloud architecture, full-stack microservices, and AI workflow orchestration.
               </p>
             </div>
 
             {/* Live Search Field */}
             <div className="relative w-full md:w-80">
-              <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-lg">search</span>
+              <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 dark:text-slate-500 text-lg">search</span>
               <input
                 type="text"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 placeholder="Filter skills, tools, stacks..."
-                className="w-full pl-10 pr-10 py-2.5 bg-white text-slate-900 rounded-xl border border-slate-300 text-xs font-semibold outline-none focus:ring-2 focus:ring-blue-500/20 transition-all shadow-sm"
+                className="w-full pl-10 pr-10 py-2.5 bg-white dark:bg-slate-900 text-slate-900 dark:text-white rounded-xl border border-slate-300 dark:border-slate-700 text-xs font-semibold outline-none focus:ring-2 focus:ring-blue-500/20 transition-all shadow-sm"
               />
               {searchTerm && (
                 <button
                   onClick={() => setSearchTerm('')}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-900"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-900 dark:hover:text-white"
                 >
                   <span className="material-symbols-outlined text-base">close</span>
                 </button>
@@ -621,7 +621,7 @@ export const SkillsProjectsPage: React.FC = () => {
               className={`px-4 py-2 rounded-xl text-xs font-bold transition-all shrink-0 ${
                 activeSkillCategory === 'all'
                   ? 'bg-blue-600 text-white shadow-sm'
-                  : 'bg-white text-slate-700 hover:bg-slate-50 border border-slate-200'
+                  : 'bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800'
               }`}
             >
               All Skills ({skills.length})
@@ -631,7 +631,7 @@ export const SkillsProjectsPage: React.FC = () => {
               className={`px-4 py-2 rounded-xl text-xs font-bold transition-all shrink-0 ${
                 activeSkillCategory === 'platforms'
                   ? 'bg-blue-600 text-white shadow-sm'
-                  : 'bg-white text-slate-700 hover:bg-slate-50 border border-slate-200'
+                  : 'bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800'
               }`}
             >
               Platforms & Tools (7)
@@ -641,7 +641,7 @@ export const SkillsProjectsPage: React.FC = () => {
               className={`px-4 py-2 rounded-xl text-xs font-bold transition-all ${
                 activeSkillCategory === 'devops'
                   ? 'bg-blue-600 text-white shadow-sm'
-                  : 'bg-white text-slate-700 hover:bg-slate-50 border border-slate-200'
+                  : 'bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800'
               }`}
             >
               Architecture & DevOps (3)
@@ -651,7 +651,7 @@ export const SkillsProjectsPage: React.FC = () => {
               className={`px-4 py-2 rounded-xl text-xs font-bold transition-all ${
                 activeSkillCategory === 'fullstack'
                   ? 'bg-blue-600 text-white shadow-sm'
-                  : 'bg-white text-slate-700 hover:bg-slate-50 border border-slate-200'
+                  : 'bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800'
               }`}
             >
               Full-Stack & Backend (4)
@@ -661,7 +661,7 @@ export const SkillsProjectsPage: React.FC = () => {
               className={`px-4 py-2 rounded-xl text-xs font-bold transition-all ${
                 activeSkillCategory === 'ai'
                   ? 'bg-blue-600 text-white shadow-sm'
-                  : 'bg-white text-slate-700 hover:bg-slate-50 border border-slate-200'
+                  : 'bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800'
               }`}
             >
               Applied AI & Automation (4)
@@ -671,7 +671,7 @@ export const SkillsProjectsPage: React.FC = () => {
               className={`px-4 py-2 rounded-xl text-xs font-bold transition-all ${
                 activeSkillCategory === 'leadership'
                   ? 'bg-blue-600 text-white shadow-sm'
-                  : 'bg-white text-slate-700 hover:bg-slate-50 border border-slate-200'
+                  : 'bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800'
               }`}
             >
               Delivery Leadership (2)
@@ -690,24 +690,24 @@ export const SkillsProjectsPage: React.FC = () => {
                   exit={{ opacity: 0, scale: 0.96 }}
                   transition={{ duration: 0.25 }}
                 >
-                  <TiltCard className="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-all h-full flex flex-col justify-between">
+                  <TiltCard className="bg-white dark:bg-slate-900/90 p-5 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-all h-full flex flex-col justify-between">
                     <div className="flex items-start justify-between gap-3">
                       <div className="flex items-center gap-3">
-                        <div className="w-9 h-9 rounded-lg bg-slate-100 flex items-center justify-center">
+                        <div className="w-9 h-9 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center">
                           <span className={`material-symbols-outlined text-lg ${skill.iconColorClass}`}>{skill.icon}</span>
                         </div>
                         <div>
-                          <h3 className="font-heading text-sm font-bold text-slate-900">{skill.name}</h3>
-                          <span className="font-mono text-[11px] text-slate-500 font-semibold">{skill.subtitle}</span>
+                          <h3 className="font-heading text-sm font-bold text-slate-900 dark:text-white">{skill.name}</h3>
+                          <span className="font-mono text-[11px] text-slate-500 dark:text-slate-400 font-semibold">{skill.subtitle}</span>
                         </div>
                       </div>
                       <span className={`font-mono text-[11px] px-2 py-0.5 rounded font-bold ${skill.levelBadgeClass}`}>
                         {skill.level}
                       </span>
                     </div>
-                    <div className="mt-4 pt-2 flex items-center justify-between text-xs text-slate-500 border-t border-slate-100">
+                    <div className="mt-4 pt-2 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 border-t border-slate-100 dark:border-slate-800">
                       <span className="font-medium">{skill.focus}</span>
-                      <span className="font-mono text-slate-900 font-bold">{skill.years}</span>
+                      <span className="font-mono text-slate-900 dark:text-slate-200 font-bold">{skill.years}</span>
                     </div>
                   </TiltCard>
                 </motion.div>
@@ -721,15 +721,15 @@ export const SkillsProjectsPage: React.FC = () => {
       {/* Section 3: Featured Systems & Projects Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-10">
         
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-slate-200 pb-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-slate-200 dark:border-slate-800 pb-6">
           <div className="space-y-1 max-w-xl">
-            <span className="font-mono text-xs text-slate-500 uppercase tracking-wider font-bold">
+            <span className="font-mono text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider font-bold">
               Project Portfolio & System Implementations
             </span>
-            <h2 className="font-heading text-2xl sm:text-3xl text-slate-900 font-extrabold">
+            <h2 className="font-heading text-2xl sm:text-3xl text-slate-900 dark:text-white font-extrabold">
               Featured AI & Engineering Systems
             </h2>
-            <p className="text-sm text-slate-600 font-normal">
+            <p className="text-sm text-slate-600 dark:text-slate-400 font-normal">
               Full-stack production builds, multimodal deep learning models, and enterprise solution architectures.
             </p>
           </div>
@@ -739,8 +739,8 @@ export const SkillsProjectsPage: React.FC = () => {
               onClick={() => setActiveProjectCategory('all')}
               className={`px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all shrink-0 ${
                 activeProjectCategory === 'all'
-                  ? 'bg-slate-900 text-white shadow-sm'
-                  : 'bg-white text-slate-700 hover:bg-slate-50 border border-slate-200'
+                  ? 'bg-slate-900 dark:bg-blue-600 text-white shadow-sm'
+                  : 'bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800'
               }`}
             >
               All Projects ({projects.length})
@@ -749,8 +749,8 @@ export const SkillsProjectsPage: React.FC = () => {
               onClick={() => setActiveProjectCategory('ai')}
               className={`px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all shrink-0 ${
                 activeProjectCategory === 'ai'
-                  ? 'bg-slate-900 text-white shadow-sm'
-                  : 'bg-white text-slate-700 hover:bg-slate-50 border border-slate-200'
+                  ? 'bg-slate-900 dark:bg-blue-600 text-white shadow-sm'
+                  : 'bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800'
               }`}
             >
               AI & RAG ({projects.filter((p) => p.category === 'ai').length})
@@ -759,8 +759,8 @@ export const SkillsProjectsPage: React.FC = () => {
               onClick={() => setActiveProjectCategory('powerplatform')}
               className={`px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all shrink-0 ${
                 activeProjectCategory === 'powerplatform'
-                  ? 'bg-slate-900 text-white shadow-sm'
-                  : 'bg-white text-slate-700 hover:bg-slate-50 border border-slate-200'
+                  ? 'bg-slate-900 dark:bg-blue-600 text-white shadow-sm'
+                  : 'bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800'
               }`}
             >
               Enterprise D365 ({projects.filter((p) => p.category === 'powerplatform').length})
@@ -774,11 +774,11 @@ export const SkillsProjectsPage: React.FC = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="text-center py-12 bg-white rounded-2xl border border-slate-200 p-8"
+              className="text-center py-12 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-8"
             >
-              <span className="material-symbols-outlined text-4xl text-slate-400 mb-2">search_off</span>
-              <p className="text-base font-bold text-slate-900 font-heading">No projects match your current search query</p>
-              <p className="text-xs text-slate-500 mt-1">Clear the search input above to view all featured systems.</p>
+              <span className="material-symbols-outlined text-4xl text-slate-400 dark:text-slate-500 mb-2">search_off</span>
+              <p className="text-base font-bold text-slate-900 dark:text-white font-heading">No projects match your current search query</p>
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">Clear the search input above to view all featured systems.</p>
             </motion.div>
           ) : (
             filteredProjects.map((project) => (
@@ -789,42 +789,42 @@ export const SkillsProjectsPage: React.FC = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.98 }}
                 transition={{ duration: 0.25 }}
-                className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200 hover:shadow-lg transition-all duration-300 space-y-6"
+                className="bg-white dark:bg-slate-900/90 rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200 dark:border-slate-800 hover:shadow-lg transition-all duration-300 space-y-6"
               >
                 {/* Header Badge & Title */}
-                <div className="flex flex-col gap-1.5 border-b border-slate-100 pb-6">
+                <div className="flex flex-col gap-1.5 border-b border-slate-100 dark:border-slate-800 pb-6">
                   <div className="flex flex-wrap items-center gap-2">
                     <span className={`font-mono text-[10px] font-bold px-2.5 py-1 rounded-md ${project.badge.bgClass}`}>
                       {project.badge.text}
                     </span>
-                    <span className="font-mono text-xs text-slate-500 font-semibold">{project.categoryLabel}</span>
+                    <span className="font-mono text-xs text-slate-500 dark:text-slate-400 font-semibold">{project.categoryLabel}</span>
                   </div>
-                  <h3 className="font-heading text-2xl sm:text-3xl font-extrabold text-slate-900">
+                  <h3 className="font-heading text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">
                     {project.title}
                   </h3>
-                  <p className="text-sm font-bold text-blue-600">
+                  <p className="text-sm font-bold text-blue-600 dark:text-blue-400">
                     {project.subtitle}
                   </p>
                 </div>
 
                 {/* Summary */}
-                <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
+                <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
                   {project.summary}
                 </p>
 
                 {/* Tech Stack Breakdown Grid (For VoiceLeads AI) */}
                 {project.techSections && (
                   <div className="space-y-4 pt-2">
-                    <h4 className="font-mono text-xs uppercase tracking-wider text-slate-500 font-bold flex items-center gap-1.5">
-                      <span className="material-symbols-outlined text-base text-blue-600">developer_board</span>
+                    <h4 className="font-mono text-xs uppercase tracking-wider text-slate-500 dark:text-slate-400 font-bold flex items-center gap-1.5">
+                      <span className="material-symbols-outlined text-base text-blue-600 dark:text-blue-400">developer_board</span>
                       <span>Technologies & System Architecture ("What Things Are Used In It")</span>
                     </h4>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                       {project.techSections.map((sec, sIdx) => (
-                        <div key={sIdx} className="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-3">
-                          <div className="flex items-center gap-2 text-slate-900 font-bold text-xs font-heading">
-                            <span className="material-symbols-outlined text-blue-600 text-base">{sec.icon}</span>
+                        <div key={sIdx} className="bg-slate-50 dark:bg-slate-800/60 p-4 rounded-xl border border-slate-200 dark:border-slate-700/60 space-y-3">
+                          <div className="flex items-center gap-2 text-slate-900 dark:text-white font-bold text-xs font-heading">
+                            <span className="material-symbols-outlined text-blue-600 dark:text-blue-400 text-base">{sec.icon}</span>
                             <span>{sec.title}</span>
                           </div>
                           <ul className="space-y-2">
@@ -835,15 +835,15 @@ export const SkillsProjectsPage: React.FC = () => {
                                     href={item.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="font-bold text-blue-600 hover:underline inline-flex items-center gap-1"
+                                    className="font-bold text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center gap-1"
                                   >
                                     {item.name}
                                     <span className="material-symbols-outlined text-[10px]">open_in_new</span>
                                   </a>
                                 ) : (
-                                  <span className="font-bold text-slate-900">{item.name}</span>
+                                  <span className="font-bold text-slate-900 dark:text-white">{item.name}</span>
                                 )}
-                                <span className="text-slate-600 text-[11px] block mt-0.5">{item.desc}</span>
+                                <span className="text-slate-600 dark:text-slate-400 text-[11px] block mt-0.5">{item.desc}</span>
                               </li>
                             ))}
                           </ul>
@@ -854,14 +854,14 @@ export const SkillsProjectsPage: React.FC = () => {
                 )}
 
                 {/* Key Deliverable Bullet Points */}
-                <div className="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2">
-                  <span className="font-mono text-[11px] uppercase tracking-wider text-slate-500 font-bold block mb-1">
+                <div className="bg-slate-50 dark:bg-slate-800/60 p-4 rounded-xl border border-slate-200 dark:border-slate-700/60 space-y-2">
+                  <span className="font-mono text-[11px] uppercase tracking-wider text-slate-500 dark:text-slate-400 font-bold block mb-1">
                     Key Architectural Impact & Capabilities:
                   </span>
                   <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
                     {project.keyHighlights.map((hl, hIdx) => (
-                      <li key={hIdx} className="flex items-start gap-2 text-xs text-slate-800 font-medium">
-                        <span className="material-symbols-outlined text-emerald-600 text-sm shrink-0 mt-0.5">check_circle</span>
+                      <li key={hIdx} className="flex items-start gap-2 text-xs text-slate-800 dark:text-slate-200 font-medium">
+                        <span className="material-symbols-outlined text-emerald-600 dark:text-emerald-400 text-sm shrink-0 mt-0.5">check_circle</span>
                         <span>{hl}</span>
                       </li>
                     ))}
@@ -869,12 +869,12 @@ export const SkillsProjectsPage: React.FC = () => {
                 </div>
 
                 {/* Technology Tags Strip */}
-                <div className="flex flex-wrap items-center gap-1.5 pt-2 border-t border-slate-100">
-                  <span className="font-mono text-[10px] text-slate-400 uppercase tracking-wider mr-1 font-bold">
+                <div className="flex flex-wrap items-center gap-1.5 pt-2 border-t border-slate-100 dark:border-slate-800">
+                  <span className="font-mono text-[10px] text-slate-400 dark:text-slate-500 uppercase tracking-wider mr-1 font-bold">
                     Stack Tags:
                   </span>
                   {project.tags.map((tag, tIdx) => (
-                    <span key={tIdx} className="font-mono text-[11px] px-2.5 py-0.5 bg-slate-100 rounded text-slate-700 font-semibold border border-slate-200">
+                    <span key={tIdx} className="font-mono text-[11px] px-2.5 py-0.5 bg-slate-100 dark:bg-slate-800/80 rounded text-slate-700 dark:text-slate-300 font-semibold border border-slate-200 dark:border-slate-700">
                       {tag}
                     </span>
                   ))}

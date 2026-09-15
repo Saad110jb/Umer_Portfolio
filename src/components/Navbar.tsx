@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { AnimatedLogo } from './AnimatedLogo';
+import { ThemeToggle } from './ThemeToggle';
 import umerPic from './Umer_pic.jpeg';
 
 export const Navbar: React.FC = () => {
@@ -26,37 +27,33 @@ export const Navbar: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Close mobile menu on route change
   useEffect(() => {
     setMobileMenuOpen(false);
   }, [location.pathname]);
 
   return (
-    <header
-      className={`sticky top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-surface-container-lowest/95 backdrop-blur-lg shadow-md border-b border-surface-container-high'
-          : 'bg-surface-container-lowest/80 backdrop-blur-sm border-b border-surface-container-high/40'
-      }`}
-    >
-      <div className="h-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-3">
-        
-        {/* Brand Monogram & Title */}
-        <Link to="/" className="flex items-center gap-3 group">
-          <AnimatedLogo size={36} className="shrink-0" />
+    <header className={`sticky top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'pt-2' : 'pt-3'} px-4 sm:px-6 lg:px-8`}>
+      <div className="max-w-7xl mx-auto flex items-center justify-between gap-3">
+
+        {/* Left Brand Identity Pill */}
+        <Link 
+          to="/" 
+          className="flex items-center gap-3 bg-white/85 dark:bg-slate-900/85 backdrop-blur-md border border-slate-200/80 dark:border-slate-800/80 shadow-[0_4px_20px_-4px_rgba(15,23,42,0.06)] rounded-full px-4 py-2 group hover:border-blue-400 dark:hover:border-blue-500 transition-all shrink-0"
+        >
+          <AnimatedLogo size={28} className="shrink-0" />
           <div className="flex flex-col min-w-0">
-            <span className="font-heading text-sm sm:text-base font-bold text-on-surface tracking-tight leading-none group-hover:text-primary transition-colors truncate">
+            <span className="font-heading text-xs sm:text-sm font-bold text-slate-900 dark:text-slate-100 tracking-tight leading-none group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors truncate">
               Muhammad Umar Farooq
             </span>
-            <span className="font-mono text-[10px] sm:text-xs text-outline font-medium mt-1 truncate">
+            <span className="font-mono text-[9px] sm:text-[10px] text-slate-500 dark:text-slate-400 font-medium tracking-tight truncate mt-0.5">
               Delivery Director & Architect
             </span>
           </div>
         </Link>
 
-        {/* Desktop Navigation Links with Magnetic Pill */}
+        {/* Center Floating Capsule Navigation Dock */}
         <nav
-          className="hidden lg:flex items-center gap-1 p-1 bg-surface-container-low/60 rounded-full border border-surface-container-high/60"
+          className="hidden lg:flex items-center gap-1 bg-white/85 dark:bg-slate-900/85 backdrop-blur-md shadow-[0_4px_20px_-4px_rgba(15,23,42,0.06)] border border-slate-200/80 dark:border-slate-800/80 rounded-full px-3 py-1.5"
           onMouseLeave={() => setHoveredPath(null)}
         >
           {navItems.map((item) => {
@@ -68,14 +65,16 @@ export const Navbar: React.FC = () => {
                 key={item.path}
                 to={item.path}
                 onMouseEnter={() => setHoveredPath(item.path)}
-                className={`relative px-4 py-2 text-xs font-semibold rounded-full transition-colors z-10 ${
-                  isActive ? 'text-primary font-bold' : 'text-on-surface-variant hover:text-on-surface'
+                className={`relative px-4 py-1.5 text-xs font-semibold rounded-full transition-colors z-10 ${
+                  isActive
+                    ? 'text-blue-600 dark:text-blue-400 font-bold'
+                    : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white'
                 }`}
               >
                 {isHighlighted && (
                   <motion.div
                     layoutId="magneticNavPill"
-                    className="absolute inset-0 rounded-full bg-surface-container-highest border border-primary/20 -z-10"
+                    className="absolute inset-0 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700/80 -z-10"
                     transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                   />
                 )}
@@ -85,28 +84,35 @@ export const Navbar: React.FC = () => {
           })}
         </nav>
 
-        {/* Desktop & Mobile Actions */}
-        <div className="flex items-center gap-2 sm:gap-3">
+        {/* Right Action & Profile Dock */}
+        <div className="flex items-center gap-2 sm:gap-2.5 shrink-0">
+          {/* Animated Sun/Moon Theme Toggle */}
+          <ThemeToggle />
+
           <Link
             to="/contact"
-            className="hidden sm:inline-flex items-center justify-center bg-primary-container text-on-primary font-semibold px-3.5 py-2 rounded-xl shadow-sm hover:bg-primary transition-all text-xs sm:text-sm hover:scale-[1.02] active:scale-[0.98]"
+            className="hidden sm:inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-full shadow-[0_4px_14px_rgba(37,99,235,0.25)] transition-all text-xs hover:scale-[1.02] active:scale-[0.98] gap-1.5"
           >
-            Get in Touch
+            <span>Get in Touch</span>
+            <span className="material-symbols-outlined text-sm">arrow_forward</span>
           </Link>
-          <img
-            src={umerPic}
-            alt="Muhammad Umar Farooq"
-            className="w-8 h-8 sm:w-9 sm:h-9 rounded-full object-cover object-top ring-2 ring-surface-container-high shadow-sm shrink-0"
-          />
+          
+          <div className="bg-white/85 dark:bg-slate-900/85 backdrop-blur-md border border-slate-200/80 dark:border-slate-800/80 shadow-[0_4px_20px_-4px_rgba(15,23,42,0.06)] rounded-full p-1 flex items-center">
+            <img
+              src={umerPic}
+              alt="Muhammad Umar Farooq"
+              className="w-7 h-7 sm:w-8 sm:h-8 rounded-full object-cover object-top ring-1 ring-slate-200 dark:ring-slate-700 shadow-sm shrink-0"
+            />
+          </div>
 
           {/* Mobile Hamburger Toggle Button */}
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors border border-surface-container-high shrink-0"
+            className="lg:hidden p-2 rounded-full bg-white/85 dark:bg-slate-900/85 backdrop-blur-md text-slate-800 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors border border-slate-200/80 dark:border-slate-800/80 shadow-sm shrink-0"
             aria-label="Toggle Navigation Menu"
           >
-            <span className="material-symbols-outlined text-xl">
+            <span className="material-symbols-outlined text-lg">
               {mobileMenuOpen ? 'close' : 'menu'}
             </span>
           </button>
@@ -122,10 +128,10 @@ export const Navbar: React.FC = () => {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.25, ease: 'easeInOut' }}
-            className="lg:hidden bg-white/98 backdrop-blur-xl border-b border-surface-container-high px-4 pt-2 pb-6 shadow-xl"
+            className="lg:hidden mt-3 bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl border border-slate-200/80 dark:border-slate-800/80 rounded-2xl p-4 shadow-2xl max-w-7xl mx-auto"
           >
-            <div className="flex flex-col gap-2 max-w-7xl mx-auto">
-              <span className="font-mono text-[10px] uppercase tracking-wider text-outline px-3 font-bold pt-2">
+            <div className="flex flex-col gap-2">
+              <span className="font-mono text-[10px] uppercase tracking-wider text-slate-400 dark:text-slate-500 px-3 font-bold pt-1">
                 Navigation Menu
               </span>
               {navItems.map((item) => {
@@ -135,16 +141,16 @@ export const Navbar: React.FC = () => {
                     key={item.path}
                     to={item.path}
                     onClick={() => setMobileMenuOpen(false)}
-                    className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-bold transition-all ${
+                    className={`flex items-center gap-3 px-4 py-2.5 rounded-xl text-xs font-bold transition-all ${
                       isActive
-                        ? 'bg-primary-container text-on-primary shadow-sm'
-                        : 'bg-surface-container-low text-on-surface hover:bg-surface-container-high'
+                        ? 'bg-blue-600 text-white shadow-md'
+                        : 'bg-slate-50 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700'
                     }`}
                   >
-                    <span className="material-symbols-outlined text-lg">{item.icon}</span>
+                    <span className="material-symbols-outlined text-base">{item.icon}</span>
                     <span>{item.label}</span>
                     {isActive && (
-                      <span className="ml-auto font-mono text-[10px] px-2 py-0.5 rounded-full bg-white/20 text-white font-bold">
+                      <span className="ml-auto font-mono text-[9px] px-2 py-0.5 rounded-full bg-white/20 text-white font-bold">
                         ACTIVE
                       </span>
                     )}
@@ -156,7 +162,7 @@ export const Navbar: React.FC = () => {
                 <Link
                   to="/contact"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="w-full py-3 px-4 rounded-xl bg-blue-600 text-white text-center font-bold text-xs flex items-center justify-center gap-2 shadow-md"
+                  className="w-full py-2.5 px-4 rounded-xl bg-blue-600 text-white text-center font-bold text-xs flex items-center justify-center gap-2 shadow-md hover:bg-blue-700"
                 >
                   <span className="material-symbols-outlined text-base">mail</span>
                   <span>Initiate Consultation Inquiry</span>
@@ -169,3 +175,5 @@ export const Navbar: React.FC = () => {
     </header>
   );
 };
+
+export default Navbar;

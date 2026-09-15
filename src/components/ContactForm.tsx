@@ -92,18 +92,18 @@ export const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="p-6 sm:p-8 bg-surface-container-lowest rounded-xl shadow-lg border border-surface-container-high flex flex-col gap-6">
+    <div className="p-6 sm:p-8 bg-white dark:bg-slate-900/90 rounded-xl shadow-lg border border-slate-200 dark:border-slate-800 flex flex-col gap-6 transition-colors">
       
       {/* Form Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-surface-container-high">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-slate-200 dark:border-slate-800">
         <div>
-          <span className="font-mono text-xs text-outline uppercase tracking-wider font-semibold">
+          <span className="font-mono text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold">
             Direct Advisory Protocol
           </span>
-          <h2 className="font-heading text-xl sm:text-2xl font-bold text-on-surface">
+          <h2 className="font-heading text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
             Enterprise Consultation Inquiry
           </h2>
-          <p className="text-xs sm:text-sm text-on-surface-variant">
+          <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400">
             Share your project parameters, cloud modernization scope, or advisory requirements.
           </p>
         </div>
@@ -117,29 +117,29 @@ export const ContactForm: React.FC = () => {
           transition={{ type: 'spring', stiffness: 300, damping: 25 }}
           className="py-10 px-4 text-center flex flex-col items-center gap-6"
         >
-          <div className="w-16 h-16 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shadow-md">
+          <div className="w-16 h-16 rounded-full bg-blue-100 dark:bg-blue-950 text-blue-600 dark:text-blue-400 flex items-center justify-center shadow-md">
             <span className="material-symbols-outlined text-3xl">check_circle</span>
           </div>
 
           <div className="max-w-md space-y-3">
-            <h3 className="font-heading text-2xl font-bold text-on-surface">
+            <h3 className="font-heading text-2xl font-bold text-slate-900 dark:text-white">
               Inquiry Dispatched!
             </h3>
-            <div className="p-3 bg-secondary-container/30 border border-secondary/20 rounded-xl text-secondary font-mono text-xs font-semibold">
+            <div className="p-3 bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-800/40 rounded-xl text-blue-700 dark:text-blue-300 font-mono text-xs font-semibold">
               Live Serverless Email Dispatched to amifar13@gmail.com
             </div>
 
             {activationNotice && (
-              <div className="p-4 bg-amber-50 border border-amber-300 rounded-xl text-amber-900 font-mono text-xs leading-relaxed text-left flex items-start gap-3 shadow-sm">
-                <span className="material-symbols-outlined text-amber-600 text-xl shrink-0 mt-0.5">mark_email_unread</span>
+              <div className="p-4 bg-amber-50 dark:bg-amber-950/40 border border-amber-300 dark:border-amber-800/60 rounded-xl text-amber-900 dark:text-amber-200 font-mono text-xs leading-relaxed text-left flex items-start gap-3 shadow-sm">
+                <span className="material-symbols-outlined text-amber-600 dark:text-amber-400 text-xl shrink-0 mt-0.5">mark_email_unread</span>
                 <div className="space-y-1">
-                  <p className="font-bold text-amber-950 uppercase tracking-wider text-[11px]">1-Click Gmail Activation Required</p>
-                  <p className="text-xs text-amber-900 font-normal">{activationNotice}</p>
+                  <p className="font-bold uppercase tracking-wider text-[11px]">1-Click Gmail Activation Required</p>
+                  <p className="text-xs font-normal">{activationNotice}</p>
                 </div>
               </div>
             )}
 
-            <p className="text-xs sm:text-sm text-on-surface-variant leading-relaxed pt-1">
+            <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed pt-1">
               Thank you for getting in touch. Muhammad Umar Farooq will review your project scope and respond within 12 business hours.
             </p>
           </div>
@@ -147,7 +147,7 @@ export const ContactForm: React.FC = () => {
           <button
             type="button"
             onClick={handleResetForm}
-            className="inline-flex items-center gap-2 px-5 py-2.5 bg-surface-container hover:bg-surface-container-high text-on-surface font-semibold rounded-xl text-xs transition-colors border border-surface-container-high"
+            className="inline-flex items-center gap-2 px-5 py-2.5 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-900 dark:text-white font-semibold rounded-xl text-xs transition-colors border border-slate-200 dark:border-slate-700 cursor-pointer"
           >
             <span className="material-symbols-outlined text-base">refresh</span>
             Submit Another Inquiry
@@ -159,8 +159,8 @@ export const ContactForm: React.FC = () => {
           
           {/* GENERAL ERROR BANNER */}
           {submissionStatus === 'error' && (
-            <div className="p-4 bg-error-container text-on-error-container rounded-xl flex items-start gap-3 text-xs">
-              <span className="material-symbols-outlined text-error text-lg shrink-0">error</span>
+            <div className="p-4 bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-800/40 text-rose-900 dark:text-rose-200 rounded-xl flex items-start gap-3 text-xs">
+              <span className="material-symbols-outlined text-rose-600 text-lg shrink-0">error</span>
               <div>
                 <p className="font-bold">Email Dispatch Failed</p>
                 <p className="mt-0.5">{errorMessage}</p>
@@ -172,11 +172,11 @@ export const ContactForm: React.FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {/* Full Name */}
             <div className="flex flex-col gap-1.5">
-              <label htmlFor="fullName" className="font-mono text-xs font-semibold text-on-surface uppercase tracking-wider">
-                Full Name <span className="text-primary">*</span>
+              <label htmlFor="fullName" className="font-mono text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider">
+                Full Name <span className="text-blue-600 dark:text-blue-400">*</span>
               </label>
               <div className="relative">
-                <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-lg pointer-events-none">
+                <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 dark:text-slate-500 text-lg pointer-events-none">
                   person
                 </span>
                 <input
@@ -184,15 +184,15 @@ export const ContactForm: React.FC = () => {
                   type="text"
                   placeholder="e.g. Sarah Jenkins"
                   {...register('fullName')}
-                  className={`w-full pl-10 pr-4 py-3 rounded-xl border text-xs sm:text-sm font-medium text-on-surface placeholder:text-outline bg-white outline-none transition-all ${
+                  className={`w-full pl-10 pr-4 py-3 rounded-xl border text-xs sm:text-sm font-medium text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-600 bg-white dark:bg-slate-950 outline-none transition-all ${
                     errors.fullName
-                      ? 'border-error focus:ring-2 focus:ring-error/20'
-                      : 'border-surface-container-high focus:border-primary focus:ring-2 focus:ring-primary/20'
+                      ? 'border-rose-500 focus:ring-2 focus:ring-rose-500/20'
+                      : 'border-slate-200 dark:border-slate-800 focus:border-blue-600 focus:ring-2 focus:ring-blue-500/20'
                   }`}
                 />
               </div>
               {errors.fullName && (
-                <p className="text-error text-xs flex items-center gap-1 font-medium mt-0.5">
+                <p className="text-rose-600 dark:text-rose-400 text-xs flex items-center gap-1 font-medium mt-0.5">
                   <span className="material-symbols-outlined text-sm">warning</span>
                   {errors.fullName.message}
                 </p>
@@ -201,11 +201,11 @@ export const ContactForm: React.FC = () => {
 
             {/* Organization */}
             <div className="flex flex-col gap-1.5">
-              <label htmlFor="organization" className="font-mono text-xs font-semibold text-on-surface uppercase tracking-wider">
-                Organization / Company <span className="text-outline font-normal">(Optional)</span>
+              <label htmlFor="organization" className="font-mono text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider">
+                Organization / Company <span className="text-slate-400 dark:text-slate-500 font-normal">(Optional)</span>
               </label>
               <div className="relative">
-                <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-lg pointer-events-none">
+                <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 dark:text-slate-500 text-lg pointer-events-none">
                   corporate_fare
                 </span>
                 <input
@@ -213,7 +213,7 @@ export const ContactForm: React.FC = () => {
                   type="text"
                   placeholder="e.g. Enterprise Solutions Corp"
                   {...register('organization')}
-                  className="w-full pl-10 pr-4 py-3 rounded-xl border border-surface-container-high focus:border-primary focus:ring-2 focus:ring-primary/20 text-xs sm:text-sm font-medium text-on-surface placeholder:text-outline bg-white outline-none transition-all"
+                  className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 focus:border-blue-600 focus:ring-2 focus:ring-blue-500/20 text-xs sm:text-sm font-medium text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-600 bg-white dark:bg-slate-950 outline-none transition-all"
                 />
               </div>
             </div>
@@ -223,11 +223,11 @@ export const ContactForm: React.FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {/* Work Email */}
             <div className="flex flex-col gap-1.5">
-              <label htmlFor="workEmail" className="font-mono text-xs font-semibold text-on-surface uppercase tracking-wider">
-                Work Email <span className="text-primary">*</span>
+              <label htmlFor="workEmail" className="font-mono text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider">
+                Work Email <span className="text-blue-600 dark:text-blue-400">*</span>
               </label>
               <div className="relative">
-                <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-lg pointer-events-none">
+                <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 dark:text-slate-500 text-lg pointer-events-none">
                   mail
                 </span>
                 <input
@@ -235,15 +235,15 @@ export const ContactForm: React.FC = () => {
                   type="email"
                   placeholder="name@company.com"
                   {...register('workEmail')}
-                  className={`w-full pl-10 pr-4 py-3 rounded-xl border text-xs sm:text-sm font-medium text-on-surface placeholder:text-outline bg-white outline-none transition-all ${
+                  className={`w-full pl-10 pr-4 py-3 rounded-xl border text-xs sm:text-sm font-medium text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-600 bg-white dark:bg-slate-950 outline-none transition-all ${
                     errors.workEmail
-                      ? 'border-error focus:ring-2 focus:ring-error/20'
-                      : 'border-surface-container-high focus:border-primary focus:ring-2 focus:ring-primary/20'
+                      ? 'border-rose-500 focus:ring-2 focus:ring-rose-500/20'
+                      : 'border-slate-200 dark:border-slate-800 focus:border-blue-600 focus:ring-2 focus:ring-blue-500/20'
                   }`}
                 />
               </div>
               {errors.workEmail && (
-                <p className="text-error text-xs flex items-center gap-1 font-medium mt-0.5">
+                <p className="text-rose-600 dark:text-rose-400 text-xs flex items-center gap-1 font-medium mt-0.5">
                   <span className="material-symbols-outlined text-sm">warning</span>
                   {errors.workEmail.message}
                 </p>
@@ -252,35 +252,35 @@ export const ContactForm: React.FC = () => {
 
             {/* Project Type Select */}
             <div className="flex flex-col gap-1.5">
-              <label htmlFor="engagementType" className="font-mono text-xs font-semibold text-on-surface uppercase tracking-wider">
-                Project Type <span className="text-primary">*</span>
+              <label htmlFor="engagementType" className="font-mono text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider">
+                Project Type <span className="text-blue-600 dark:text-blue-400">*</span>
               </label>
               <div className="relative">
-                <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-lg pointer-events-none">
+                <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 dark:text-slate-500 text-lg pointer-events-none">
                   work
                 </span>
                 <select
                   id="engagementType"
                   {...register('engagementType')}
-                  className={`w-full pl-10 pr-10 py-3 rounded-xl border text-xs sm:text-sm font-medium text-on-surface bg-white outline-none transition-all appearance-none ${
+                  className={`w-full pl-10 pr-10 py-3 rounded-xl border text-xs sm:text-sm font-medium text-slate-900 dark:text-white bg-white dark:bg-slate-950 outline-none transition-all appearance-none ${
                     errors.engagementType
-                      ? 'border-error focus:ring-2 focus:ring-error/20'
-                      : 'border-surface-container-high focus:border-primary focus:ring-2 focus:ring-primary/20'
+                      ? 'border-rose-500 focus:ring-2 focus:ring-rose-500/20'
+                      : 'border-slate-200 dark:border-slate-800 focus:border-blue-600 focus:ring-2 focus:ring-blue-500/20'
                   }`}
                 >
-                  <option value="" disabled>Select project type...</option>
+                  <option value="" disabled className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">Select project type...</option>
                   {engagementTypeOptions.map((opt) => (
-                    <option key={opt.value} value={opt.value}>
+                    <option key={opt.value} value={opt.value} className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">
                       {opt.label}
                     </option>
                   ))}
                 </select>
-                <span className="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline text-base pointer-events-none">
+                <span className="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 dark:text-slate-500 text-base pointer-events-none">
                   expand_more
                 </span>
               </div>
               {errors.engagementType && (
-                <p className="text-error text-xs flex items-center gap-1 font-medium mt-0.5">
+                <p className="text-rose-600 dark:text-rose-400 text-xs flex items-center gap-1 font-medium mt-0.5">
                   <span className="material-symbols-outlined text-sm">warning</span>
                   {errors.engagementType.message}
                 </p>
@@ -291,17 +291,17 @@ export const ContactForm: React.FC = () => {
           {/* MESSAGE TEXTAREA */}
           <div className="flex flex-col gap-1.5">
             <div className="flex items-center justify-between">
-              <label htmlFor="message" className="font-mono text-xs font-semibold text-on-surface uppercase tracking-wider">
-                Project Scope / Key Objectives <span className="text-primary">*</span>
+              <label htmlFor="message" className="font-mono text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider">
+                Project Scope / Key Objectives <span className="text-blue-600 dark:text-blue-400">*</span>
               </label>
               <span className={`font-mono text-xs ${
-                messageValue.length >= 20 ? 'text-secondary font-bold' : 'text-outline'
+                messageValue.length >= 20 ? 'text-emerald-600 dark:text-emerald-400 font-bold' : 'text-slate-400 dark:text-slate-500'
               }`}>
                 {messageValue.length} / 20 min characters
               </span>
             </div>
             <div className="relative">
-              <span className="material-symbols-outlined absolute left-3 top-3 text-outline text-lg pointer-events-none">
+              <span className="material-symbols-outlined absolute left-3 top-3 text-slate-400 dark:text-slate-500 text-lg pointer-events-none">
                 chat
               </span>
               <textarea
@@ -309,20 +309,20 @@ export const ContactForm: React.FC = () => {
                 rows={5}
                 placeholder="Describe your current enterprise landscape, target timeline, technical stack requirements, or key consultation objectives..."
                 {...register('message')}
-                className={`w-full pl-10 pr-4 py-3 rounded-xl border text-xs sm:text-sm font-medium text-on-surface placeholder:text-outline bg-white outline-none transition-all ${
+                className={`w-full pl-10 pr-4 py-3 rounded-xl border text-xs sm:text-sm font-medium text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-600 bg-white dark:bg-slate-950 outline-none transition-all ${
                   errors.message
-                    ? 'border-error focus:ring-2 focus:ring-error/20'
-                    : 'border-surface-container-high focus:border-primary focus:ring-2 focus:ring-primary/20'
+                    ? 'border-rose-500 focus:ring-2 focus:ring-rose-500/20'
+                    : 'border-slate-200 dark:border-slate-800 focus:border-blue-600 focus:ring-2 focus:ring-blue-500/20'
                 }`}
               />
             </div>
             {errors.message ? (
-              <p className="text-error text-xs flex items-center gap-1 font-medium mt-0.5">
+              <p className="text-rose-600 dark:text-rose-400 text-xs flex items-center gap-1 font-medium mt-0.5">
                 <span className="material-symbols-outlined text-sm">warning</span>
                 {errors.message.message}
               </p>
             ) : (
-              <p className="text-xs text-outline">
+              <p className="text-xs text-slate-500 dark:text-slate-400">
                 Provide details on architecture scope, timeframe, and target outcomes.
               </p>
             )}
@@ -335,7 +335,7 @@ export const ContactForm: React.FC = () => {
             className={`w-full py-4 px-6 rounded-xl font-semibold text-sm shadow-lg transition-all duration-300 flex items-center justify-center gap-2 disabled:cursor-not-allowed group cursor-pointer ${
               submitStep === 'dispatched'
                 ? 'bg-emerald-600 text-white shadow-emerald-600/20'
-                : 'bg-primary hover:bg-primary-container text-on-primary shadow-blue-600/20'
+                : 'bg-blue-600 hover:bg-blue-700 text-white shadow-blue-600/20'
             }`}
           >
             <AnimatePresence mode="wait">
