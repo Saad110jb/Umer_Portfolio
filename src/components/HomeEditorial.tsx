@@ -424,14 +424,6 @@ export const HomeEditorial: React.FC = () => {
               >
                 LinkedIn
               </a>
-              <a
-                href="https://github.com/Saad110jb"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 rounded-full bg-white dark:bg-slate-800 hover:bg-[#0B375A] hover:text-white dark:hover:bg-teal-600 text-slate-800 dark:text-slate-200 text-xs font-bold border border-slate-200 dark:border-slate-700 shadow-sm transition-all"
-              >
-                GitHub
-              </a>
               <Link
                 to="/contact"
                 className="px-5 py-2 rounded-full bg-[#0B375A] text-white hover:bg-[#07243D] text-xs font-bold shadow-md transition-all flex items-center gap-1.5"

@@ -22,7 +22,6 @@ interface ProjectItem {
   category: 'ai' | 'fullstack' | 'powerplatform';
   categoryLabel: string;
   subtitle: string;
-  githubUrl?: string;
   badge: {
     text: string;
     bgClass: string;
@@ -427,7 +426,6 @@ export const SkillsProjectsPage: React.FC = () => {
       category: 'ai',
       categoryLabel: 'Applied AI & Natural Language Processing',
       subtitle: 'Custom Conversational Urdu Chatbot via From-Scratch Transformer Architecture',
-      githubUrl: 'https://github.com/Saad110jb/project-urdu-transformer',
       badge: {
         text: 'OPEN SOURCE NLP',
         bgClass: 'bg-emerald-100 text-emerald-900 border border-emerald-300 font-bold',

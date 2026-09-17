@@ -69,15 +69,6 @@ export const Footer: React.FC = () => {
                 <span className="material-symbols-outlined text-sm">link</span>
                 <span>LinkedIn Executive Profile</span>
               </a>
-              <a
-                href="https://github.com/Saad110jb"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-slate-700 dark:text-slate-300 hover:text-[#0B375A] dark:hover:text-teal-400 transition-colors"
-              >
-                <span className="material-symbols-outlined text-sm">code</span>
-                <span>GitHub Repositories</span>
-              </a>
               <span className="flex items-center gap-1.5 text-slate-500 dark:text-slate-400 text-[11px]">
                 <span className="material-symbols-outlined text-sm">group</span>
                 <span>Microsoft Tech Community</span>
