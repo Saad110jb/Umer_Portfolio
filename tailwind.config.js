@@ -46,10 +46,15 @@ export default {
         'outline-variant': '#c3c6d7',
         'inverse-surface': '#283044',
         'inverse-on-surface': '#eef0ff',
+        'navy-primary': '#0B375A',
+        'navy-hover': '#07243D',
+        'teal-mint': '#E0F7F5',
+        'teal-badge': '#008B8B',
+        'sand-footer': '#F4F1EA',
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        heading: ['Space Grotesk', 'Inter', 'sans-serif'],
+        sans: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
+        heading: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
         mono: ['JetBrains Mono', 'monospace'],
       },
       boxShadow: {

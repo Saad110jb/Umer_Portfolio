@@ -91,7 +91,7 @@ export const Navbar: React.FC = () => {
 
           <Link
             to="/contact"
-            className="hidden sm:inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-full shadow-[0_4px_14px_rgba(37,99,235,0.25)] transition-all text-xs hover:scale-[1.02] active:scale-[0.98] gap-1.5"
+            className="hidden sm:inline-flex items-center justify-center bg-[#0B375A] hover:bg-[#07243D] text-white font-semibold px-4 py-2 rounded-full shadow-sm transition-all text-xs hover:scale-[1.02] active:scale-[0.98] gap-1.5"
           >
             <span>Get in Touch</span>
             <span className="material-symbols-outlined text-sm">arrow_forward</span>
