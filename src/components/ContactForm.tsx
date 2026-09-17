@@ -92,18 +92,18 @@ export const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="p-6 sm:p-8 bg-white dark:bg-slate-900/90 rounded-xl shadow-lg border border-slate-200 dark:border-slate-800 flex flex-col gap-6 transition-colors">
+    <div className="p-6 sm:p-8 bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200/80 dark:border-slate-800 flex flex-col gap-6 transition-all duration-300">
       
       {/* Form Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-slate-200 dark:border-slate-800">
         <div>
-          <span className="font-mono text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold">
-            Direct Advisory Protocol
+          <span className="font-mono text-xs text-teal-700 dark:text-teal-400 uppercase tracking-wider font-bold">
+            DIRECT ADVISORY PROTOCOL
           </span>
-          <h2 className="font-heading text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
+          <h2 className="font-heading text-xl sm:text-2xl font-extrabold text-[#0B375A] dark:text-white">
             Enterprise Consultation Inquiry
           </h2>
-          <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400">
+          <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-0.5">
             Share your project parameters, cloud modernization scope, or advisory requirements.
           </p>
         </div>
@@ -332,10 +332,10 @@ export const ContactForm: React.FC = () => {
           <button
             type="submit"
             disabled={submissionStatus === 'submitting'}
-            className={`w-full py-4 px-6 rounded-xl font-semibold text-sm shadow-lg transition-all duration-300 flex items-center justify-center gap-2 disabled:cursor-not-allowed group cursor-pointer ${
+            className={`w-full py-3.5 px-6 rounded-full font-semibold text-sm shadow-md transition-all duration-300 flex items-center justify-center gap-2 disabled:cursor-not-allowed group cursor-pointer ${
               submitStep === 'dispatched'
                 ? 'bg-emerald-600 text-white shadow-emerald-600/20'
-                : 'bg-blue-600 hover:bg-blue-700 text-white shadow-blue-600/20'
+                : 'bg-[#0B375A] hover:bg-[#07243D] text-white'
             }`}
           >
             <AnimatePresence mode="wait">

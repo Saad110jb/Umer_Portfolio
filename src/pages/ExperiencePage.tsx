@@ -193,15 +193,15 @@ export const ExperiencePage: React.FC = () => {
         {/* Main Content Container */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 
-          {/* Top Eyebrow, Hero Heading, Sub-lead */}
+          {/* Eyebrow + Primary H1 */}
           <div className="flex flex-col gap-3 max-w-4xl">
-            <div className="inline-flex items-center gap-2 self-start px-3 py-1 bg-blue-50 dark:bg-slate-800/80 border border-blue-200 dark:border-slate-700 rounded-lg text-blue-600 dark:text-blue-400 font-bold">
-              <span className="material-symbols-outlined text-base">account_tree</span>
-              <span className="font-mono text-xs uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-50/90 dark:bg-teal-950/70 border border-teal-200/80 dark:border-teal-800/80 text-teal-800 dark:text-teal-200 text-xs font-semibold w-fit">
+              <span className="material-symbols-outlined text-base">verified</span>
+              <span className="font-mono text-xs uppercase tracking-wider font-bold">
                 CAREER TRAJECTORY & EXECUTIVE LEADERSHIP
               </span>
             </div>
-            <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl text-slate-900 dark:text-white tracking-tight font-extrabold">
+            <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl text-[#0B375A] dark:text-white tracking-tight font-extrabold">
               Professional Experience & Enterprise Track Record
             </h1>
             <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
@@ -209,58 +209,58 @@ export const ExperiencePage: React.FC = () => {
             </p>
           </div>
 
-          {/* Quick Career Metrics Strip (4-Card Bento) */}
+          {/* Quick Career Metrics Strip (4-Card Bento) with Hover Micro-Interactions */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
-            <div className="relative p-5 bg-white dark:bg-slate-900/90 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md group">
+            <div className="group p-5 bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200/80 dark:border-slate-800 hover:shadow-lg hover:-translate-y-1 hover:border-teal-400 dark:hover:border-teal-600 transition-all duration-300">
               <div className="flex items-center justify-between mb-2">
                 <span className="font-mono text-xs text-slate-400 dark:text-slate-500 uppercase tracking-wider font-bold">Experience</span>
-                <div className="w-8 h-8 rounded-lg bg-blue-50 dark:bg-blue-950/60 flex items-center justify-center text-blue-600 dark:text-blue-400 group-hover:bg-blue-600 dark:group-hover:bg-blue-500 group-hover:text-white transition-colors">
+                <div className="w-9 h-9 rounded-xl bg-teal-50 dark:bg-teal-950 flex items-center justify-center text-teal-700 dark:text-teal-400 group-hover:scale-110 transition-transform">
                   <span className="material-symbols-outlined text-lg">verified_user</span>
                 </div>
               </div>
-              <div className="font-heading text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-none mb-1">10+ Years</div>
+              <div className="font-heading text-2xl sm:text-3xl font-extrabold text-[#0B375A] dark:text-white tracking-tight leading-none mb-1">10+ Years</div>
               <div className="text-xs text-slate-600 dark:text-slate-400 font-medium">Enterprise Delivery Leadership</div>
-              <div className="mt-3 pt-2 flex items-center gap-1 text-emerald-700 dark:text-emerald-400 text-xs font-mono font-bold border-t border-slate-100 dark:border-slate-800">
+              <div className="mt-3 pt-2 flex items-center gap-1 text-teal-700 dark:text-teal-400 text-xs font-mono font-bold border-t border-slate-100 dark:border-slate-800">
                 <span className="material-symbols-outlined text-sm">trending_up</span> Australia & MEA
               </div>
             </div>
 
-            <div className="relative p-5 bg-white dark:bg-slate-900/90 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md group">
+            <div className="group p-5 bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200/80 dark:border-slate-800 hover:shadow-lg hover:-translate-y-1 hover:border-teal-400 dark:hover:border-teal-600 transition-all duration-300">
               <div className="flex items-center justify-between mb-2">
                 <span className="font-mono text-xs text-slate-400 dark:text-slate-500 uppercase tracking-wider font-bold">Volume</span>
-                <div className="w-8 h-8 rounded-lg bg-blue-50 dark:bg-blue-950/60 flex items-center justify-center text-blue-600 dark:text-blue-400 group-hover:bg-blue-600 dark:group-hover:bg-blue-500 group-hover:text-white transition-colors">
+                <div className="w-9 h-9 rounded-xl bg-teal-50 dark:bg-teal-950 flex items-center justify-center text-teal-700 dark:text-teal-400 group-hover:scale-110 transition-transform">
                   <span className="material-symbols-outlined text-lg">account_balance_wallet</span>
                 </div>
               </div>
-              <div className="font-heading text-2xl sm:text-3xl font-extrabold text-blue-600 dark:text-blue-400 tracking-tight leading-none mb-1">$40M+</div>
+              <div className="font-heading text-2xl sm:text-3xl font-extrabold text-[#0B375A] dark:text-teal-400 tracking-tight leading-none mb-1">$40M+</div>
               <div className="text-xs text-slate-600 dark:text-slate-400 font-medium">Cumulative Project Delivery Volume</div>
               <div className="mt-3 pt-2 flex items-center gap-1 text-slate-500 dark:text-slate-400 text-xs font-mono font-medium border-t border-slate-100 dark:border-slate-800">
                 <span className="material-symbols-outlined text-sm">format_image_left</span> Tier-1 Public & Private
               </div>
             </div>
 
-            <div className="relative p-5 bg-white dark:bg-slate-900/90 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md group">
+            <div className="group p-5 bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200/80 dark:border-slate-800 hover:shadow-lg hover:-translate-y-1 hover:border-teal-400 dark:hover:border-teal-600 transition-all duration-300">
               <div className="flex items-center justify-between mb-2">
                 <span className="font-mono text-xs text-slate-400 dark:text-slate-500 uppercase tracking-wider font-bold">Entities</span>
-                <div className="w-8 h-8 rounded-lg bg-blue-50 dark:bg-blue-950/60 flex items-center justify-center text-blue-600 dark:text-blue-400 group-hover:bg-blue-600 dark:group-hover:bg-blue-500 group-hover:text-white transition-colors">
+                <div className="w-9 h-9 rounded-xl bg-teal-50 dark:bg-teal-950 flex items-center justify-center text-teal-700 dark:text-teal-400 group-hover:scale-110 transition-transform">
                   <span className="material-symbols-outlined text-lg">corporate_fare</span>
                 </div>
               </div>
-              <div className="font-heading text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-none mb-1">40+</div>
+              <div className="font-heading text-2xl sm:text-3xl font-extrabold text-[#0B375A] dark:text-white tracking-tight leading-none mb-1">40+</div>
               <div className="text-xs text-slate-600 dark:text-slate-400 font-medium">Gov & Tier-1 Entities Transformed</div>
-              <div className="mt-3 pt-2 flex items-center gap-1 text-emerald-700 dark:text-emerald-400 text-xs font-mono font-bold border-t border-slate-100 dark:border-slate-800">
+              <div className="mt-3 pt-2 flex items-center gap-1 text-teal-700 dark:text-teal-400 text-xs font-mono font-bold border-t border-slate-100 dark:border-slate-800">
                 <span className="material-symbols-outlined text-sm">sync_alt</span> Sovereign DGE Programs
               </div>
             </div>
 
-            <div className="relative p-5 bg-white dark:bg-slate-900/90 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md group">
+            <div className="group p-5 bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200/80 dark:border-slate-800 hover:shadow-lg hover:-translate-y-1 hover:border-teal-400 dark:hover:border-teal-600 transition-all duration-300">
               <div className="flex items-center justify-between mb-2">
                 <span className="font-mono text-xs text-slate-400 dark:text-slate-500 uppercase tracking-wider font-bold">Governance</span>
-                <div className="w-8 h-8 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 flex items-center justify-center text-emerald-600 dark:text-emerald-400 group-hover:bg-emerald-600 dark:group-hover:bg-emerald-500 group-hover:text-white transition-colors">
+                <div className="w-9 h-9 rounded-xl bg-teal-50 dark:bg-teal-950 flex items-center justify-center text-teal-700 dark:text-teal-400 group-hover:scale-110 transition-transform">
                   <span className="material-symbols-outlined text-lg">timelapse</span>
                 </div>
               </div>
-              <div className="font-heading text-2xl sm:text-3xl font-extrabold text-emerald-600 dark:text-emerald-400 tracking-tight leading-none mb-1">100%</div>
+              <div className="font-heading text-2xl sm:text-3xl font-extrabold text-[#0B375A] dark:text-teal-400 tracking-tight leading-none mb-1">100%</div>
               <div className="text-xs text-slate-600 dark:text-slate-400 font-medium">On-Time Milestone Governance</div>
               <div className="mt-3 pt-2 flex items-center gap-1 text-slate-500 dark:text-slate-400 text-xs font-mono font-medium border-t border-slate-100 dark:border-slate-800">
                 <span className="material-symbols-outlined text-sm">task_alt</span> Zero Critical SLA Drift
@@ -324,8 +324,8 @@ export const ExperiencePage: React.FC = () => {
                     )}
                   </div>
 
-                  {/* Timeline Card */}
-                  <div className="bg-white dark:bg-slate-900/90 rounded-xl p-5 sm:p-7 shadow-sm border border-slate-200 dark:border-slate-800 transition-all duration-200 hover:shadow-md hover:-translate-y-0.5">
+                  {/* Timeline Card with Hover Micro-Interactions */}
+                  <div className="group bg-white dark:bg-slate-900 rounded-2xl p-5 sm:p-7 shadow-sm border border-slate-200/80 dark:border-slate-800 hover:shadow-xl hover:-translate-y-1 hover:border-teal-400 dark:hover:border-teal-600 transition-all duration-300 ease-out">
                     
                     {/* Header Block */}
                     <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-4 pb-4">

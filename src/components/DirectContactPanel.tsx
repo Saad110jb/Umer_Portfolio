@@ -50,29 +50,29 @@ export const DirectContactPanel: React.FC = () => {
       <div className="flex flex-col gap-6">
         {/* Section Header */}
         <div className="flex flex-col gap-1">
-          <span className="font-mono text-xs text-slate-400 dark:text-slate-500 uppercase tracking-wider font-bold">
-            Direct Access Channels
+          <span className="font-mono text-xs text-teal-700 dark:text-teal-400 uppercase tracking-wider font-bold">
+            DIRECT ACCESS CHANNELS
           </span>
-          <h2 className="font-heading text-2xl font-extrabold text-slate-900 dark:text-white">
+          <h2 className="font-heading text-2xl font-extrabold text-[#0B375A] dark:text-white">
             Confidential Inquiries
           </h2>
         </div>
 
-        {/* Channel Cards Grid */}
-        <div className="flex flex-col gap-3">
+        {/* Channel Cards Grid with Hover Micro-Interactions */}
+        <div className="flex flex-col gap-3.5">
           {/* Email Card */}
-          <div className="p-4 bg-white/90 dark:bg-slate-900/90 rounded-xl shadow-sm border border-slate-200/80 dark:border-slate-800/80 hover:shadow-md transition-all flex items-center justify-between gap-3">
+          <div className="group p-4 bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200/80 dark:border-slate-800 hover:shadow-lg hover:-translate-y-1 hover:border-teal-400 dark:hover:border-teal-600 transition-all duration-300 flex items-center justify-between gap-3">
             <div className="flex items-center gap-3.5 min-w-0">
-              <div className="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-950/80 flex items-center justify-center text-blue-700 dark:text-blue-300 shrink-0">
+              <div className="w-12 h-12 rounded-xl bg-teal-50 dark:bg-teal-950 flex items-center justify-center text-teal-800 dark:text-teal-300 shrink-0 group-hover:scale-110 transition-transform">
                 <span className="material-symbols-outlined text-2xl">alternate_email</span>
               </div>
               <div className="flex flex-col min-w-0">
                 <span className="font-mono text-[10px] text-slate-400 dark:text-slate-500 uppercase tracking-wider font-bold">
-                  Principal Contact Email
+                  PRINCIPAL CONTACT EMAIL
                 </span>
                 <a
                   href={`mailto:${email}`}
-                  className="font-heading text-base font-extrabold text-slate-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors truncate"
+                  className="font-heading text-base font-extrabold text-[#0B375A] dark:text-white hover:text-teal-700 dark:hover:text-teal-400 transition-colors truncate"
                 >
                   {email}
                 </a>
@@ -85,7 +85,7 @@ export const DirectContactPanel: React.FC = () => {
               <button
                 type="button"
                 onClick={handleCopyEmail}
-                className="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-slate-700 transition-colors border border-slate-200 dark:border-slate-700"
+                className="p-2 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:text-teal-700 dark:hover:text-teal-400 hover:bg-teal-50 dark:hover:bg-slate-700 transition-all border border-slate-200 dark:border-slate-700"
                 title="Copy email address"
               >
                 <span className="material-symbols-outlined text-base">
@@ -94,7 +94,7 @@ export const DirectContactPanel: React.FC = () => {
               </button>
               <a
                 href={`mailto:${email}`}
-                className="p-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-colors shadow-sm"
+                className="p-2 rounded-xl bg-[#0B375A] text-white hover:bg-[#07243D] transition-all shadow-sm"
                 title="Launch email client"
               >
                 <span className="material-symbols-outlined text-base">open_in_new</span>
@@ -103,16 +103,16 @@ export const DirectContactPanel: React.FC = () => {
           </div>
 
           {/* UAE Phone & WhatsApp Card */}
-          <div className="p-4 bg-white/90 dark:bg-slate-900/90 rounded-xl shadow-sm border border-slate-200/80 dark:border-slate-800/80 hover:shadow-md transition-all flex items-center justify-between gap-3">
+          <div className="group p-4 bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200/80 dark:border-slate-800 hover:shadow-lg hover:-translate-y-1 hover:border-teal-400 dark:hover:border-teal-600 transition-all duration-300 flex items-center justify-between gap-3">
             <div className="flex items-center gap-3.5 min-w-0">
-              <div className="w-12 h-12 rounded-xl bg-emerald-100 dark:bg-emerald-950/80 flex items-center justify-center text-emerald-800 dark:text-emerald-300 shrink-0">
+              <div className="w-12 h-12 rounded-xl bg-teal-50 dark:bg-teal-950 flex items-center justify-center text-teal-800 dark:text-teal-300 shrink-0 group-hover:scale-110 transition-transform">
                 <span className="material-symbols-outlined text-2xl">call</span>
               </div>
               <div className="flex flex-col min-w-0">
                 <span className="font-mono text-[10px] text-slate-400 dark:text-slate-500 uppercase tracking-wider font-bold">
-                  UAE Mobile & WhatsApp
+                  UAE MOBILE & WHATSAPP
                 </span>
-                <span className="font-heading text-base font-extrabold text-slate-900 dark:text-white truncate">
+                <span className="font-heading text-base font-extrabold text-[#0B375A] dark:text-white truncate">
                   {phoneUae}
                 </span>
                 <span className="font-mono text-[11px] text-slate-500 dark:text-slate-400 font-semibold">
@@ -125,31 +125,24 @@ export const DirectContactPanel: React.FC = () => {
                 href={`https://wa.me/${phoneUaeTel.replace('+', '')}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-3 py-1.5 rounded-lg bg-emerald-600 text-white font-mono text-xs font-bold flex items-center gap-1 hover:bg-emerald-700 transition-colors shadow-sm"
+                className="px-3.5 py-2 rounded-full bg-[#0B375A] text-white font-mono text-xs font-bold flex items-center gap-1 hover:bg-[#07243D] transition-all shadow-sm"
               >
                 <span className="material-symbols-outlined text-sm">chat</span> WhatsApp
-              </a>
-              <a
-                href={`tel:${phoneUaeTel}`}
-                className="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors border border-slate-200 dark:border-slate-700"
-                title="Call directly"
-              >
-                <span className="material-symbols-outlined text-base">phone_forwarded</span>
               </a>
             </div>
           </div>
 
           {/* Pakistan Phone & WhatsApp Card */}
-          <div className="p-4 bg-white/90 dark:bg-slate-900/90 rounded-xl shadow-sm border border-slate-200/80 dark:border-slate-800/80 hover:shadow-md transition-all flex items-center justify-between gap-3">
+          <div className="group p-4 bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200/80 dark:border-slate-800 hover:shadow-lg hover:-translate-y-1 hover:border-teal-400 dark:hover:border-teal-600 transition-all duration-300 flex items-center justify-between gap-3">
             <div className="flex items-center gap-3.5 min-w-0">
-              <div className="w-12 h-12 rounded-xl bg-emerald-100 dark:bg-emerald-950/80 flex items-center justify-center text-emerald-800 dark:text-emerald-300 shrink-0">
+              <div className="w-12 h-12 rounded-xl bg-teal-50 dark:bg-teal-950 flex items-center justify-center text-teal-800 dark:text-teal-300 shrink-0 group-hover:scale-110 transition-transform">
                 <span className="material-symbols-outlined text-2xl">phone_iphone</span>
               </div>
               <div className="flex flex-col min-w-0">
                 <span className="font-mono text-[10px] text-slate-400 dark:text-slate-500 uppercase tracking-wider font-bold">
-                  Pakistan Mobile & WhatsApp
+                  PAKISTAN MOBILE & WHATSAPP
                 </span>
-                <span className="font-heading text-base font-extrabold text-slate-900 dark:text-white truncate">
+                <span className="font-heading text-base font-extrabold text-[#0B375A] dark:text-white truncate">
                   {phonePk}
                 </span>
                 <span className="font-mono text-[11px] text-slate-500 dark:text-slate-400 font-semibold">
@@ -162,60 +155,53 @@ export const DirectContactPanel: React.FC = () => {
                 href={`https://wa.me/${phonePkTel.replace('+', '')}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-3 py-1.5 rounded-lg bg-emerald-600 text-white font-mono text-xs font-bold flex items-center gap-1 hover:bg-emerald-700 transition-colors shadow-sm"
+                className="px-3.5 py-2 rounded-full bg-[#0B375A] text-white font-mono text-xs font-bold flex items-center gap-1 hover:bg-[#07243D] transition-all shadow-sm"
               >
                 <span className="material-symbols-outlined text-sm">chat</span> WhatsApp
-              </a>
-              <a
-                href={`tel:${phonePkTel}`}
-                className="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors border border-slate-200 dark:border-slate-700"
-                title="Call directly"
-              >
-                <span className="material-symbols-outlined text-base">phone_forwarded</span>
               </a>
             </div>
           </div>
 
           {/* Dual Executive Hubs Location Card */}
-          <div className="p-4 bg-white/90 dark:bg-slate-900/90 rounded-xl shadow-sm border border-slate-200/80 dark:border-slate-800/80 hover:shadow-md transition-all flex flex-col gap-3">
+          <div className="group p-5 bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200/80 dark:border-slate-800 hover:shadow-lg hover:-translate-y-1 hover:border-teal-400 dark:hover:border-teal-600 transition-all duration-300 flex flex-col gap-3">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-blue-600 dark:text-blue-400 shrink-0 border border-slate-200 dark:border-slate-700">
+                <div className="w-12 h-12 rounded-xl bg-teal-50 dark:bg-teal-950 flex items-center justify-center text-teal-800 dark:text-teal-300 shrink-0 group-hover:scale-110 transition-transform">
                   <span className="material-symbols-outlined text-2xl">location_city</span>
                 </div>
                 <div className="flex flex-col">
                   <span className="font-mono text-[10px] text-slate-400 dark:text-slate-500 uppercase tracking-wider font-bold">
-                    Dual Executive Hubs
+                    DUAL EXECUTIVE HUBS
                   </span>
-                  <span className="font-heading text-base font-extrabold text-slate-900 dark:text-white">
+                  <span className="font-heading text-base font-extrabold text-[#0B375A] dark:text-white">
                     EMEA & APAC Presences
                   </span>
                 </div>
               </div>
-              <span className="font-mono text-[11px] px-2.5 py-1 bg-slate-100 dark:bg-slate-800 rounded-lg text-slate-700 dark:text-slate-300 font-bold border border-slate-200 dark:border-slate-700">
+              <span className="font-mono text-[10px] px-3 py-1 bg-teal-50 dark:bg-teal-950 rounded-full text-teal-800 dark:text-teal-300 font-bold border border-teal-200 dark:border-teal-800">
                 Global Advisory
               </span>
             </div>
 
             {/* Hub Details Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
-              <div className="p-2.5 bg-slate-50 dark:bg-slate-800/80 rounded-lg flex flex-col gap-0.5 border border-slate-200 dark:border-slate-700">
-                <div className="flex items-center gap-1 text-blue-600 dark:text-blue-400">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1">
+              <div className="p-3 bg-slate-50 dark:bg-slate-800/80 rounded-xl flex flex-col gap-0.5 border border-slate-200 dark:border-slate-700">
+                <div className="flex items-center gap-1 text-teal-700 dark:text-teal-400">
                   <span className="material-symbols-outlined text-xs">flag</span>
                   <span className="text-xs font-bold font-heading">Sharjah & Dubai, UAE</span>
                 </div>
-                <span className="font-mono text-[10px] text-slate-400 dark:text-slate-500 font-semibold">EMEA Command Base</span>
-                <span className="font-mono text-[11px] text-blue-600 dark:text-blue-400 font-bold">
+                <span className="font-mono text-[10px] text-slate-500 dark:text-slate-400 font-semibold">EMEA Command Base</span>
+                <span className="font-mono text-[11px] text-[#0B375A] dark:text-teal-300 font-bold">
                   {uaeTime || 'GST (UTC+4)'}
                 </span>
               </div>
-              <div className="p-2.5 bg-slate-50 dark:bg-slate-800/80 rounded-lg flex flex-col gap-0.5 border border-slate-200 dark:border-slate-700">
-                <div className="flex items-center gap-1 text-indigo-600 dark:text-indigo-400">
+              <div className="p-3 bg-slate-50 dark:bg-slate-800/80 rounded-xl flex flex-col gap-0.5 border border-slate-200 dark:border-slate-700">
+                <div className="flex items-center gap-1 text-teal-700 dark:text-teal-400">
                   <span className="material-symbols-outlined text-xs">flag</span>
                   <span className="text-xs font-bold font-heading">Sydney, Australia</span>
                 </div>
-                <span className="font-mono text-[10px] text-slate-400 dark:text-slate-500 font-semibold">APAC Practice Hub</span>
-                <span className="font-mono text-[11px] text-indigo-600 dark:text-indigo-400 font-bold">
+                <span className="font-mono text-[10px] text-slate-500 dark:text-slate-400 font-semibold">APAC Practice Hub</span>
+                <span className="font-mono text-[11px] text-[#0B375A] dark:text-teal-300 font-bold">
                   {sydTime || 'AEST (UTC+10)'}
                 </span>
               </div>
@@ -223,16 +209,16 @@ export const DirectContactPanel: React.FC = () => {
           </div>
 
           {/* LinkedIn Profile Card */}
-          <div className="p-4 bg-white/90 dark:bg-slate-900/90 rounded-xl shadow-sm border border-slate-200/80 dark:border-slate-800/80 hover:shadow-md transition-all flex items-center justify-between gap-3">
+          <div className="group p-4 bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200/80 dark:border-slate-800 hover:shadow-lg hover:-translate-y-1 hover:border-teal-400 dark:hover:border-teal-600 transition-all duration-300 flex items-center justify-between gap-3">
             <div className="flex items-center gap-3.5 min-w-0">
-              <div className="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-950/80 flex items-center justify-center text-blue-800 dark:text-blue-300 shrink-0">
+              <div className="w-12 h-12 rounded-xl bg-teal-50 dark:bg-teal-950 flex items-center justify-center text-teal-800 dark:text-teal-300 shrink-0 group-hover:scale-110 transition-transform">
                 <span className="material-symbols-outlined text-2xl">badge</span>
               </div>
               <div className="flex flex-col min-w-0">
                 <span className="font-mono text-[10px] text-slate-400 dark:text-slate-500 uppercase tracking-wider font-bold">
-                  LinkedIn Profile
+                  LINKEDIN PROFILE
                 </span>
-                <span className="font-heading text-base font-extrabold text-slate-900 dark:text-white truncate">
+                <span className="font-heading text-base font-extrabold text-[#0B375A] dark:text-white truncate">
                   linkedin.com/in/amifar
                 </span>
                 <span className="font-mono text-[11px] text-slate-500 dark:text-slate-400 font-semibold">
@@ -244,7 +230,7 @@ export const DirectContactPanel: React.FC = () => {
               href={linkedinUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-3.5 py-2 rounded-lg bg-blue-50 dark:bg-blue-950/80 text-blue-700 dark:text-blue-300 hover:bg-blue-600 dark:hover:bg-blue-500 hover:text-white transition-all text-xs font-bold inline-flex items-center gap-1 border border-blue-200 dark:border-blue-800 shadow-sm"
+              className="px-4 py-2 rounded-full bg-[#0B375A] text-white hover:bg-[#07243D] transition-all text-xs font-bold inline-flex items-center gap-1 shadow-md"
             >
               <span>Connect</span>
               <span className="material-symbols-outlined text-xs">arrow_forward</span>

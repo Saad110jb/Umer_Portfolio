@@ -238,7 +238,7 @@ export const HomeEditorial: React.FC = () => {
               {credentials.map((cred, idx) => (
                 <div
                   key={idx}
-                  className="bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-sm border border-slate-200/80 dark:border-slate-800 hover:border-teal-300 dark:hover:border-teal-700 transition-all flex flex-col justify-between gap-2"
+                  className="group bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-sm border border-slate-200/80 dark:border-slate-800 hover:border-teal-400 dark:hover:border-teal-600 hover:-translate-y-0.5 hover:shadow-md transition-all flex flex-col justify-between gap-2"
                 >
                   <div className="flex items-center justify-between">
                     <span className={`font-mono text-xs font-bold ${cred.color}`}>{cred.code}</span>
@@ -274,18 +274,18 @@ export const HomeEditorial: React.FC = () => {
             {pillars.map((item, index) => (
               <div
                 key={index}
-                className="bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-sm border border-slate-200/80 dark:border-slate-800 hover:border-teal-300 dark:hover:border-teal-700 transition-all hover:shadow-lg flex flex-col justify-between"
+                className="group bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-sm border border-slate-200/80 dark:border-slate-800 hover:border-teal-400 dark:hover:border-teal-600 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 ease-out flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <div className="w-12 h-12 rounded-2xl bg-teal-50 dark:bg-teal-950/80 text-teal-800 dark:text-teal-300 border border-teal-200 dark:border-teal-800 flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-2xl bg-teal-50 dark:bg-teal-950/80 text-teal-800 dark:text-teal-300 border border-teal-200 dark:border-teal-800 flex items-center justify-center group-hover:scale-110 transition-transform">
                       <span className="material-symbols-outlined text-2xl">{item.icon}</span>
                     </div>
                     <span className="px-2.5 py-1 rounded-full bg-teal-50 dark:bg-teal-950 text-teal-800 dark:text-teal-300 text-[10px] font-bold border border-teal-200 dark:border-teal-800">
                       {item.badge}
                     </span>
                   </div>
-                  <h3 className="font-heading text-lg font-bold text-[#0B375A] dark:text-slate-100 mb-2">
+                  <h3 className="font-heading text-lg font-extrabold text-[#0B375A] dark:text-slate-100 mb-2">
                     {item.title}
                   </h3>
                   <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
@@ -329,9 +329,9 @@ export const HomeEditorial: React.FC = () => {
               {processSteps.map((step, index) => (
                 <div
                   key={index}
-                  className="bg-white dark:bg-slate-900 rounded-2xl p-5 border border-slate-200/80 dark:border-slate-800 shadow-sm flex flex-col gap-3"
+                  className="group bg-white dark:bg-slate-900 rounded-2xl p-5 border border-slate-200/80 dark:border-slate-800 shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-teal-400 transition-all duration-300 flex flex-col gap-3"
                 >
-                  <div className="w-9 h-9 rounded-xl bg-teal-100 dark:bg-teal-950 text-teal-800 dark:text-teal-300 font-heading font-extrabold text-base flex items-center justify-center border border-teal-200 dark:border-teal-800">
+                  <div className="w-9 h-9 rounded-xl bg-teal-100 dark:bg-teal-950 text-teal-800 dark:text-teal-300 font-heading font-extrabold text-base flex items-center justify-center border border-teal-200 dark:border-teal-800 group-hover:scale-110 transition-transform">
                     {step.step}
                   </div>
                   <h3 className="font-heading text-base font-bold text-[#0B375A] dark:text-white leading-snug">

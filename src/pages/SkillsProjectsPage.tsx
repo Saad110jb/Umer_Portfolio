@@ -374,6 +374,46 @@ export const SkillsProjectsPage: React.FC = () => {
       tags: ['React 18', 'FastAPI', 'Vapi AI', 'WebRTC', 'OpenAI GPT', 'n8n', 'Google Sheets API', 'Docker']
     },
     {
+      id: 'bazaarboost-marketplace',
+      title: '🛍️ BazaarBoost: Ad-Driven Multi-Tenant Local Marketplace',
+      category: 'ai',
+      categoryLabel: 'Applied AI & Multi-Tenant SaaS E-Commerce',
+      subtitle: 'The Intelligent, Ad-Driven Multi-Tenant Marketplace for Local Commerce',
+      badge: {
+        text: 'MULTI-TENANT SAAS + LOCAL AI',
+        bgClass: 'bg-teal-50 text-teal-800 border border-teal-200/80 font-bold',
+      },
+      summary: 'BazaarBoost is a comprehensive, multi-tenant Software-as-a-Service (SaaS) e-commerce platform custom-tailored for local vendor ecosystems. Unlike traditional global SaaS models that rely on monthly credit card subscriptions, BazaarBoost monetizes via a Manual Bank Transfer Ad-Promotion Bidding/Slot System. The platform utilizes lightweight, open-source, locally hosted AI models to eliminate external API costs while offering automated product tagging, OCR-based fraud detection for payment receipts, and smart product recommendations.',
+      techSections: [
+        {
+          title: 'Core SaaS & Ad Monetization Engine',
+          icon: 'storefront',
+          items: [
+            { name: 'Multi-Tenant SaaS Architecture', desc: 'Isolated tenant data boundaries, custom vendor storefronts, and catalog management.' },
+            { name: 'Ad-Promotion Bidding System', desc: 'Manual Bank Transfer slot auction & promotion bidding system replacing monthly subscriptions.' },
+            { name: 'Manual Bank Transfer Payment Workflow', desc: 'Custom local payment workflow tailored for regional vendor financial habits.' },
+          ]
+        },
+        {
+          title: 'Locally Hosted Open-Source AI Stack',
+          icon: 'smart_toy',
+          items: [
+            { name: 'OCR Receipt Fraud Detection Engine', desc: 'Tesseract/EasyOCR pipeline detecting tampered bank transfer payment receipts.' },
+            { name: 'Automated AI Product Tagging', desc: 'On-device open-source NLP model classifying and tagging vendor product listings.' },
+            { name: 'Smart Recommendation System', desc: 'Zero-API-cost vector embedding engine powering local vendor & item discovery.' },
+          ]
+        }
+      ],
+      keyHighlights: [
+        'Multi-Tenant SaaS Architecture: Tailored multi-vendor e-commerce platform with isolated tenant environments.',
+        'Ad-Promotion Bidding System: Manual bank transfer bidding slot system monetizing local vendor promotion.',
+        'Locally Hosted Open-Source AI: Zero external API costs via self-hosted lightweight vision & NLP models.',
+        'OCR Receipt Fraud Detection: Automated verification pipeline analyzing payment transfer slips for tampering.',
+        'Smart AI Catalog & Discovery: Automated product categorization, tagging, and contextual buyer recommendations.'
+      ],
+      tags: ['Multi-Tenant SaaS', 'Locally Hosted AI', 'Python', 'OCR Fraud Detection', 'Ad Bidding System', 'Product Tagging', 'Smart Recommendations', 'Local E-Commerce']
+    },
+    {
       id: 'rag-medical-direct',
       title: '🩺 DIRECT: Diagnostic Reasoning RAG System (RAG_Medical)',
       category: 'ai',
@@ -519,55 +559,55 @@ export const SkillsProjectsPage: React.FC = () => {
 
           {/* Eyebrow + Primary H1 */}
           <div className="flex flex-col gap-3 max-w-4xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800/60 text-blue-600 dark:text-blue-400 font-bold w-fit">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-50/90 dark:bg-teal-950/70 border border-teal-200/80 dark:border-teal-800/80 text-teal-800 dark:text-teal-200 text-xs font-semibold w-fit">
               <span className="material-symbols-outlined text-base">verified</span>
-              <span className="font-mono text-xs uppercase tracking-wider">
-                Capabilities & Technical Portfolio
+              <span className="font-mono text-xs uppercase tracking-wider font-bold">
+                CAPABILITIES & TECHNICAL PORTFOLIO
               </span>
             </div>
-            <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl text-slate-900 dark:text-white font-extrabold tracking-tight">
+            <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl text-[#0B375A] dark:text-white font-extrabold tracking-tight">
               Enterprise Architecture, Applied AI & Technical Skills
             </h1>
-            <p className="text-base sm:text-lg text-slate-600 dark:text-slate-400 max-w-3xl leading-relaxed">
+            <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 max-w-3xl leading-relaxed">
               Over a decade orchestrating sovereign government digital transformations, mission-critical Power Platform & Dynamics 365 enterprise ecosystems, fault-tolerant cloud microservices, and applied cognitive AI systems.
             </p>
           </div>
 
-          {/* Quick Metrics Bar (Bento Grid) */}
+          {/* Quick Metrics Bar (Bento Grid) with Hover Micro-Interactions */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
-            <div className="bg-white dark:bg-slate-900/90 p-5 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 hover:shadow-md transition-all">
+            <div className="group bg-white dark:bg-slate-900 p-5 rounded-2xl shadow-sm border border-slate-200/80 dark:border-slate-800 hover:shadow-lg hover:-translate-y-1 hover:border-teal-400 dark:hover:border-teal-600 transition-all duration-300">
               <div className="flex items-center justify-between">
                 <span className="font-mono text-[10px] text-slate-400 dark:text-slate-500 font-bold uppercase">PRACTICE DOMAINS</span>
-                <span className="material-symbols-outlined text-blue-600 dark:text-blue-400 text-xl">domain</span>
+                <span className="material-symbols-outlined text-teal-700 dark:text-teal-400 text-xl group-hover:scale-110 transition-transform">domain</span>
               </div>
-              <p className="font-heading text-3xl font-extrabold text-slate-900 dark:text-white mt-1">5</p>
+              <p className="font-heading text-3xl font-extrabold text-[#0B375A] dark:text-white mt-1">5</p>
               <span className="text-xs text-slate-600 dark:text-slate-400 font-medium">Core Specializations</span>
             </div>
 
-            <div className="bg-white dark:bg-slate-900/90 p-5 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 hover:shadow-md transition-all">
+            <div className="group bg-white dark:bg-slate-900 p-5 rounded-2xl shadow-sm border border-slate-200/80 dark:border-slate-800 hover:shadow-lg hover:-translate-y-1 hover:border-teal-400 dark:hover:border-teal-600 transition-all duration-300">
               <div className="flex items-center justify-between">
                 <span className="font-mono text-[10px] text-slate-400 dark:text-slate-500 font-bold uppercase">PORTFOLIO TRACK</span>
-                <span className="material-symbols-outlined text-blue-600 dark:text-blue-400 text-xl">stacks</span>
+                <span className="material-symbols-outlined text-teal-700 dark:text-teal-400 text-xl group-hover:scale-110 transition-transform">stacks</span>
               </div>
-              <p className="font-heading text-3xl font-extrabold text-blue-600 dark:text-blue-400 mt-1">40+</p>
+              <p className="font-heading text-3xl font-extrabold text-[#0B375A] dark:text-teal-400 mt-1">40+</p>
               <span className="text-xs text-slate-600 dark:text-slate-400 font-medium">Enterprise Deployments</span>
             </div>
 
-            <div className="bg-white dark:bg-slate-900/90 p-5 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 hover:shadow-md transition-all">
+            <div className="group bg-white dark:bg-slate-900 p-5 rounded-2xl shadow-sm border border-slate-200/80 dark:border-slate-800 hover:shadow-lg hover:-translate-y-1 hover:border-teal-400 dark:hover:border-teal-600 transition-all duration-300">
               <div className="flex items-center justify-between">
                 <span className="font-mono text-[10px] text-slate-400 dark:text-slate-500 font-bold uppercase">GOVERNANCE & SLA</span>
-                <span className="material-symbols-outlined text-emerald-600 dark:text-emerald-400 text-xl">verified_user</span>
+                <span className="material-symbols-outlined text-teal-700 dark:text-teal-400 text-xl group-hover:scale-110 transition-transform">verified_user</span>
               </div>
-              <p className="font-heading text-3xl font-extrabold text-emerald-600 dark:text-emerald-400 mt-1">100%</p>
+              <p className="font-heading text-3xl font-extrabold text-[#0B375A] dark:text-teal-400 mt-1">100%</p>
               <span className="text-xs text-slate-600 dark:text-slate-400 font-medium">On-Time Sprint Milestones</span>
             </div>
 
-            <div className="bg-white dark:bg-slate-900/90 p-5 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 hover:shadow-md transition-all">
+            <div className="group bg-white dark:bg-slate-900 p-5 rounded-2xl shadow-sm border border-slate-200/80 dark:border-slate-800 hover:shadow-lg hover:-translate-y-1 hover:border-teal-400 dark:hover:border-teal-600 transition-all duration-300">
               <div className="flex items-center justify-between">
                 <span className="font-mono text-[10px] text-slate-400 dark:text-slate-500 font-bold uppercase">ALM STANDARD</span>
-                <span className="material-symbols-outlined text-indigo-600 dark:text-indigo-400 text-xl">hub</span>
+                <span className="material-symbols-outlined text-teal-700 dark:text-teal-400 text-xl group-hover:scale-110 transition-transform">hub</span>
               </div>
-              <p className="font-heading text-3xl font-extrabold text-indigo-600 dark:text-indigo-400 mt-1">0-Debt</p>
+              <p className="font-heading text-3xl font-extrabold text-[#0B375A] dark:text-teal-400 mt-1">0-Debt</p>
               <span className="text-xs text-slate-600 dark:text-slate-400 font-medium">Managed Solutions Only</span>
             </div>
           </div>
@@ -616,9 +656,9 @@ export const SkillsProjectsPage: React.FC = () => {
           <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none -mx-4 px-4 sm:mx-0 sm:px-0 sm:flex-wrap">
             <button
               onClick={() => setActiveSkillCategory('all')}
-              className={`px-4 py-2 rounded-xl text-xs font-bold transition-all shrink-0 ${
+              className={`px-4 py-2 rounded-full text-xs font-bold transition-all shrink-0 ${
                 activeSkillCategory === 'all'
-                  ? 'bg-blue-600 text-white shadow-sm'
+                  ? 'bg-[#0B375A] text-white shadow-sm'
                   : 'bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800'
               }`}
             >
@@ -626,9 +666,9 @@ export const SkillsProjectsPage: React.FC = () => {
             </button>
             <button
               onClick={() => setActiveSkillCategory('platforms')}
-              className={`px-4 py-2 rounded-xl text-xs font-bold transition-all shrink-0 ${
+              className={`px-4 py-2 rounded-full text-xs font-bold transition-all shrink-0 ${
                 activeSkillCategory === 'platforms'
-                  ? 'bg-blue-600 text-white shadow-sm'
+                  ? 'bg-[#0B375A] text-white shadow-sm'
                   : 'bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800'
               }`}
             >
@@ -636,9 +676,9 @@ export const SkillsProjectsPage: React.FC = () => {
             </button>
             <button
               onClick={() => setActiveSkillCategory('devops')}
-              className={`px-4 py-2 rounded-xl text-xs font-bold transition-all ${
+              className={`px-4 py-2 rounded-full text-xs font-bold transition-all ${
                 activeSkillCategory === 'devops'
-                  ? 'bg-blue-600 text-white shadow-sm'
+                  ? 'bg-[#0B375A] text-white shadow-sm'
                   : 'bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800'
               }`}
             >
@@ -646,9 +686,9 @@ export const SkillsProjectsPage: React.FC = () => {
             </button>
             <button
               onClick={() => setActiveSkillCategory('fullstack')}
-              className={`px-4 py-2 rounded-xl text-xs font-bold transition-all ${
+              className={`px-4 py-2 rounded-full text-xs font-bold transition-all ${
                 activeSkillCategory === 'fullstack'
-                  ? 'bg-blue-600 text-white shadow-sm'
+                  ? 'bg-[#0B375A] text-white shadow-sm'
                   : 'bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800'
               }`}
             >
@@ -656,9 +696,9 @@ export const SkillsProjectsPage: React.FC = () => {
             </button>
             <button
               onClick={() => setActiveSkillCategory('ai')}
-              className={`px-4 py-2 rounded-xl text-xs font-bold transition-all ${
+              className={`px-4 py-2 rounded-full text-xs font-bold transition-all ${
                 activeSkillCategory === 'ai'
-                  ? 'bg-blue-600 text-white shadow-sm'
+                  ? 'bg-[#0B375A] text-white shadow-sm'
                   : 'bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800'
               }`}
             >
@@ -666,9 +706,9 @@ export const SkillsProjectsPage: React.FC = () => {
             </button>
             <button
               onClick={() => setActiveSkillCategory('leadership')}
-              className={`px-4 py-2 rounded-xl text-xs font-bold transition-all ${
+              className={`px-4 py-2 rounded-full text-xs font-bold transition-all ${
                 activeSkillCategory === 'leadership'
-                  ? 'bg-blue-600 text-white shadow-sm'
+                  ? 'bg-[#0B375A] text-white shadow-sm'
                   : 'bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800'
               }`}
             >
@@ -688,24 +728,24 @@ export const SkillsProjectsPage: React.FC = () => {
                   exit={{ opacity: 0, scale: 0.96 }}
                   transition={{ duration: 0.25 }}
                 >
-                  <TiltCard className="bg-white dark:bg-slate-900/90 p-5 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-all h-full flex flex-col justify-between">
+                  <TiltCard className="group bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200/80 dark:border-slate-800 shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-teal-400 dark:hover:border-teal-600 transition-all duration-300 ease-out h-full flex flex-col justify-between">
                     <div className="flex items-start justify-between gap-3">
                       <div className="flex items-center gap-3">
-                        <div className="w-9 h-9 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center">
-                          <span className={`material-symbols-outlined text-lg ${skill.iconColorClass}`}>{skill.icon}</span>
+                        <div className="w-10 h-10 rounded-xl bg-teal-50 dark:bg-teal-950 flex items-center justify-center group-hover:scale-110 transition-transform">
+                          <span className={`material-symbols-outlined text-xl ${skill.iconColorClass}`}>{skill.icon}</span>
                         </div>
                         <div>
-                          <h3 className="font-heading text-sm font-bold text-slate-900 dark:text-white">{skill.name}</h3>
+                          <h3 className="font-heading text-sm font-extrabold text-[#0B375A] dark:text-white">{skill.name}</h3>
                           <span className="font-mono text-[11px] text-slate-500 dark:text-slate-400 font-semibold">{skill.subtitle}</span>
                         </div>
                       </div>
-                      <span className={`font-mono text-[11px] px-2 py-0.5 rounded font-bold ${skill.levelBadgeClass}`}>
+                      <span className={`font-mono text-[11px] px-2.5 py-0.5 rounded-full font-bold border border-teal-200 dark:border-teal-800 ${skill.levelBadgeClass}`}>
                         {skill.level}
                       </span>
                     </div>
-                    <div className="mt-4 pt-2 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 border-t border-slate-100 dark:border-slate-800">
+                    <div className="mt-4 pt-3 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 border-t border-slate-100 dark:border-slate-800">
                       <span className="font-medium">{skill.focus}</span>
-                      <span className="font-mono text-slate-900 dark:text-slate-200 font-bold">{skill.years}</span>
+                      <span className="font-mono text-[#0B375A] dark:text-teal-300 font-bold">{skill.years}</span>
                     </div>
                   </TiltCard>
                 </motion.div>
@@ -787,20 +827,20 @@ export const SkillsProjectsPage: React.FC = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.98 }}
                 transition={{ duration: 0.25 }}
-                className="bg-white dark:bg-slate-900/90 rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200 dark:border-slate-800 hover:shadow-lg transition-all duration-300 space-y-6"
+                className="group bg-white dark:bg-slate-900 rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200/80 dark:border-slate-800 hover:shadow-xl hover:-translate-y-1 hover:border-teal-400 dark:hover:border-teal-600 transition-all duration-300 ease-out space-y-6"
               >
                 {/* Header Badge & Title */}
                 <div className="flex flex-col gap-1.5 border-b border-slate-100 dark:border-slate-800 pb-6">
                   <div className="flex flex-wrap items-center gap-2">
-                    <span className={`font-mono text-[10px] font-bold px-2.5 py-1 rounded-md ${project.badge.bgClass}`}>
+                    <span className={`font-mono text-[10px] font-bold px-3 py-1 rounded-full border border-teal-200 dark:border-teal-800 ${project.badge.bgClass}`}>
                       {project.badge.text}
                     </span>
                     <span className="font-mono text-xs text-slate-500 dark:text-slate-400 font-semibold">{project.categoryLabel}</span>
                   </div>
-                  <h3 className="font-heading text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">
+                  <h3 className="font-heading text-2xl sm:text-3xl font-extrabold text-[#0B375A] dark:text-white">
                     {project.title}
                   </h3>
-                  <p className="text-sm font-bold text-blue-600 dark:text-blue-400">
+                  <p className="text-sm font-bold text-teal-700 dark:text-teal-400">
                     {project.subtitle}
                   </p>
                 </div>
