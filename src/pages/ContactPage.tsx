@@ -58,13 +58,13 @@ export const ContactPage: React.FC = () => {
           </div>
 
           {/* Executive SLA Telemetry Ribbon with Smooth Hover Effects */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4 border-t border-slate-200/80 dark:border-slate-800">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-slate-200/80 dark:border-slate-800">
             <div className="group flex items-center gap-3.5 p-4 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/80 dark:border-slate-800 shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-teal-400 dark:hover:border-teal-600 transition-all duration-300">
               <div className="w-11 h-11 rounded-xl bg-teal-50 dark:bg-teal-950 flex items-center justify-center text-teal-700 dark:text-teal-300 shrink-0 group-hover:scale-110 transition-transform">
                 <span className="material-symbols-outlined text-xl">bolt</span>
               </div>
               <div className="flex flex-col min-w-0">
-                <span className="font-mono text-[10px] text-slate-400 dark:text-slate-500 uppercase font-bold">RESPONSE SLA</span>
+                <span className="font-sans text-[10px] text-slate-400 dark:text-slate-500 uppercase font-bold tracking-wider">RESPONSE SLA</span>
                 <span className="font-heading text-sm font-extrabold text-[#0B375A] dark:text-white truncate">&lt; 12 Hours</span>
                 <span className="text-xs text-slate-500 dark:text-slate-400">Executive Priority Queue</span>
               </div>
@@ -75,7 +75,7 @@ export const ContactPage: React.FC = () => {
                 <span className="material-symbols-outlined text-xl">public</span>
               </div>
               <div className="flex flex-col min-w-0">
-                <span className="font-mono text-[10px] text-slate-400 dark:text-slate-500 uppercase font-bold">DIRECT REACH</span>
+                <span className="font-sans text-[10px] text-slate-400 dark:text-slate-500 uppercase font-bold tracking-wider">DIRECT REACH</span>
                 <span className="font-heading text-sm font-extrabold text-[#0B375A] dark:text-white truncate">Dubai & Sydney</span>
                 <span className="text-xs text-slate-500 dark:text-slate-400">Dual Base Operations</span>
               </div>
@@ -86,20 +86,9 @@ export const ContactPage: React.FC = () => {
                 <span className="material-symbols-outlined text-xl">handshake</span>
               </div>
               <div className="flex flex-col min-w-0">
-                <span className="font-mono text-[10px] text-slate-400 dark:text-slate-500 uppercase font-bold">ENGAGEMENT TYPES</span>
-                <span className="font-heading text-sm font-extrabold text-[#0B375A] dark:text-white truncate">Advisory & Retainer</span>
+                <span className="font-sans text-[10px] text-slate-400 dark:text-slate-500 uppercase font-bold tracking-wider">ENGAGEMENT TYPES</span>
+                <span className="font-heading text-sm font-extrabold text-[#0B375A] dark:text-white truncate">Technology & Advisory</span>
                 <span className="text-xs text-slate-500 dark:text-slate-400">Board & Program Leadership</span>
-              </div>
-            </div>
-
-            <div className="group flex items-center gap-3.5 p-4 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/80 dark:border-slate-800 shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-teal-400 dark:hover:border-teal-600 transition-all duration-300">
-              <div className="w-11 h-11 rounded-xl bg-teal-50 dark:bg-teal-950 flex items-center justify-center text-teal-700 dark:text-teal-300 shrink-0 group-hover:scale-110 transition-transform">
-                <span className="material-symbols-outlined text-xl">lock_clock</span>
-              </div>
-              <div className="flex flex-col min-w-0">
-                <span className="font-mono text-[10px] text-slate-400 dark:text-slate-500 uppercase font-bold">DATA SECURITY</span>
-                <span className="font-heading text-sm font-extrabold text-[#0B375A] dark:text-white truncate">SOC2 & IRAP</span>
-                <span className="text-xs text-slate-500 dark:text-slate-400">Encrypted Transmission</span>
               </div>
             </div>
           </div>
