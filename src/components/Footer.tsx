@@ -37,13 +37,13 @@ export const Footer: React.FC = () => {
 
           {/* Column 2: Regional Hubs */}
           <div className="md:col-span-3 space-y-2">
-            <span className="font-mono text-[10px] text-slate-500 dark:text-slate-400 uppercase tracking-wider font-bold block">
+            <span className="text-[10px] text-slate-500 dark:text-slate-400 uppercase tracking-wider font-bold block font-sans">
               REGIONAL HUBS
             </span>
-            <div className="space-y-2 text-xs">
+            <div className="space-y-2 text-xs font-sans">
               <div className="flex items-center gap-1.5 text-[#0B375A] dark:text-slate-200 font-bold">
                 <span className="material-symbols-outlined text-teal-700 dark:text-teal-400 text-sm">location_on</span>
-                <span>Melbourne, Australia</span>
+                <span>Sydney, Australia</span>
               </div>
               <span className="text-[11px] text-slate-600 dark:text-slate-400 block pl-5">APAC Practice Hub</span>
               <div className="flex items-center gap-1.5 text-[#0B375A] dark:text-slate-200 font-bold pt-1">
@@ -51,15 +51,25 @@ export const Footer: React.FC = () => {
                 <span>Abu Dhabi & Dubai, UAE</span>
               </div>
               <span className="text-[11px] text-slate-600 dark:text-slate-400 block pl-5">EMEA Executive Operations</span>
+              <div className="flex items-center gap-1.5 text-[#0B375A] dark:text-slate-200 font-bold pt-1">
+                <span className="material-symbols-outlined text-teal-700 dark:text-teal-400 text-sm">location_on</span>
+                <span>Riyadh, Saudi Arabia</span>
+              </div>
+              <span className="text-[11px] text-slate-600 dark:text-slate-400 block pl-5">GCC Regional Operations</span>
+              <div className="flex items-center gap-1.5 text-[#0B375A] dark:text-slate-200 font-bold pt-1">
+                <span className="material-symbols-outlined text-teal-700 dark:text-teal-400 text-sm">location_on</span>
+                <span>New York, USA</span>
+              </div>
+              <span className="text-[11px] text-slate-600 dark:text-slate-400 block pl-5">Americas Advisory Hub</span>
             </div>
           </div>
 
           {/* Column 3: Professional Network */}
           <div className="md:col-span-3 space-y-2">
-            <span className="font-mono text-[10px] text-slate-500 dark:text-slate-400 uppercase tracking-wider font-bold block">
+            <span className="text-[10px] text-slate-500 dark:text-slate-400 uppercase tracking-wider font-bold block font-sans">
               EXECUTIVE NETWORK
             </span>
-            <div className="space-y-2 text-xs font-medium">
+            <div className="space-y-2 text-xs font-medium font-sans">
               <a
                 href="https://linkedin.com/in/amifar"
                 target="_blank"
@@ -78,10 +88,10 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-6 border-t border-slate-300/70 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-600 dark:text-slate-400 font-mono">
+        <div className="pt-6 border-t border-slate-300/70 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-600 dark:text-slate-400 font-sans font-medium">
           <span>© {new Date().getFullYear()} Muhammad Umar Farooq. Sovereign & Enterprise Architecture Practice.</span>
           <div className="flex items-center gap-4">
-            <span className="text-[11px] text-slate-500 dark:text-slate-400">Australia • United Arab Emirates</span>
+            <span className="text-[11px] text-slate-500 dark:text-slate-400">Sydney • Dubai • Riyadh • New York</span>
             <Link to="/contact" className="text-[#0B375A] dark:text-teal-400 font-bold hover:underline flex items-center gap-1">
               <span>Executive Contact</span>
               <span className="material-symbols-outlined text-sm">arrow_forward</span>

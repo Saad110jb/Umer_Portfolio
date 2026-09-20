@@ -55,7 +55,7 @@ export default {
       fontFamily: {
         sans: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
         heading: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
-        mono: ['JetBrains Mono', 'monospace'],
+        mono: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
       },
       boxShadow: {
         'soft-card': '0 4px 20px -2px rgba(15, 23, 42, 0.05)',

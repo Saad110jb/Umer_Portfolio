@@ -61,8 +61,8 @@ export const DirectContactPanel: React.FC = () => {
         {/* Channel Cards Grid with Hover Micro-Interactions */}
         <div className="flex flex-col gap-3.5">
           {/* Email Card */}
-          <div className="group p-4 bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200/80 dark:border-slate-800 hover:shadow-lg hover:-translate-y-1 hover:border-teal-400 dark:hover:border-teal-600 transition-all duration-300 flex items-center justify-between gap-3">
-            <div className="flex items-center gap-3.5 min-w-0">
+          <div className="group p-4 bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200/80 dark:border-slate-800 hover:shadow-lg hover:-translate-y-1 hover:border-teal-400 dark:hover:border-teal-600 transition-all duration-300 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+            <div className="flex items-center gap-3.5 min-w-0 w-full sm:w-auto">
               <div className="w-12 h-12 rounded-xl bg-teal-50 dark:bg-teal-950 flex items-center justify-center text-teal-800 dark:text-teal-300 shrink-0 group-hover:scale-110 transition-transform">
                 <span className="material-symbols-outlined text-2xl">alternate_email</span>
               </div>
@@ -72,7 +72,7 @@ export const DirectContactPanel: React.FC = () => {
                 </span>
                 <a
                   href={`mailto:${email}`}
-                  className="font-heading text-base font-extrabold text-[#0B375A] dark:text-white hover:text-teal-700 dark:hover:text-teal-400 transition-colors truncate"
+                  className="font-heading text-sm sm:text-base font-extrabold text-[#0B375A] dark:text-white hover:text-teal-700 dark:hover:text-teal-400 transition-colors truncate"
                 >
                   {email}
                 </a>
@@ -81,7 +81,7 @@ export const DirectContactPanel: React.FC = () => {
                 </span>
               </div>
             </div>
-            <div className="flex items-center gap-1.5 shrink-0">
+            <div className="flex items-center gap-1.5 shrink-0 self-end sm:self-center">
               <button
                 type="button"
                 onClick={handleCopyEmail}
@@ -103,8 +103,8 @@ export const DirectContactPanel: React.FC = () => {
           </div>
 
           {/* UAE Phone & WhatsApp Card */}
-          <div className="group p-4 bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200/80 dark:border-slate-800 hover:shadow-lg hover:-translate-y-1 hover:border-teal-400 dark:hover:border-teal-600 transition-all duration-300 flex items-center justify-between gap-3">
-            <div className="flex items-center gap-3.5 min-w-0">
+          <div className="group p-4 bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200/80 dark:border-slate-800 hover:shadow-lg hover:-translate-y-1 hover:border-teal-400 dark:hover:border-teal-600 transition-all duration-300 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+            <div className="flex items-center gap-3.5 min-w-0 w-full sm:w-auto">
               <div className="w-12 h-12 rounded-xl bg-teal-50 dark:bg-teal-950 flex items-center justify-center text-teal-800 dark:text-teal-300 shrink-0 group-hover:scale-110 transition-transform">
                 <span className="material-symbols-outlined text-2xl">call</span>
               </div>
@@ -112,7 +112,7 @@ export const DirectContactPanel: React.FC = () => {
                 <span className="font-mono text-[10px] text-slate-400 dark:text-slate-500 uppercase tracking-wider font-bold">
                   UAE MOBILE & WHATSAPP
                 </span>
-                <span className="font-heading text-base font-extrabold text-[#0B375A] dark:text-white truncate">
+                <span className="font-heading text-sm sm:text-base font-extrabold text-[#0B375A] dark:text-white truncate">
                   {phoneUae}
                 </span>
                 <span className="font-mono text-[11px] text-slate-500 dark:text-slate-400 font-semibold">
@@ -120,12 +120,12 @@ export const DirectContactPanel: React.FC = () => {
                 </span>
               </div>
             </div>
-            <div className="flex items-center gap-1.5 shrink-0">
+            <div className="flex items-center gap-1.5 shrink-0 self-end sm:self-center w-full sm:w-auto">
               <a
                 href={`https://wa.me/${phoneUaeTel.replace('+', '')}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-3.5 py-2 rounded-full bg-[#0B375A] text-white font-mono text-xs font-bold flex items-center gap-1 hover:bg-[#07243D] transition-all shadow-sm"
+                className="px-3.5 py-2 rounded-full bg-[#0B375A] text-white font-mono text-xs font-bold flex items-center justify-center gap-1 hover:bg-[#07243D] transition-all shadow-sm w-full sm:w-auto"
               >
                 <span className="material-symbols-outlined text-sm">chat</span> WhatsApp
               </a>
@@ -133,8 +133,8 @@ export const DirectContactPanel: React.FC = () => {
           </div>
 
           {/* Pakistan Phone & WhatsApp Card */}
-          <div className="group p-4 bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200/80 dark:border-slate-800 hover:shadow-lg hover:-translate-y-1 hover:border-teal-400 dark:hover:border-teal-600 transition-all duration-300 flex items-center justify-between gap-3">
-            <div className="flex items-center gap-3.5 min-w-0">
+          <div className="group p-4 bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200/80 dark:border-slate-800 hover:shadow-lg hover:-translate-y-1 hover:border-teal-400 dark:hover:border-teal-600 transition-all duration-300 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+            <div className="flex items-center gap-3.5 min-w-0 w-full sm:w-auto">
               <div className="w-12 h-12 rounded-xl bg-teal-50 dark:bg-teal-950 flex items-center justify-center text-teal-800 dark:text-teal-300 shrink-0 group-hover:scale-110 transition-transform">
                 <span className="material-symbols-outlined text-2xl">phone_iphone</span>
               </div>
@@ -142,7 +142,7 @@ export const DirectContactPanel: React.FC = () => {
                 <span className="font-mono text-[10px] text-slate-400 dark:text-slate-500 uppercase tracking-wider font-bold">
                   PAKISTAN MOBILE & WHATSAPP
                 </span>
-                <span className="font-heading text-base font-extrabold text-[#0B375A] dark:text-white truncate">
+                <span className="font-heading text-sm sm:text-base font-extrabold text-[#0B375A] dark:text-white truncate">
                   {phonePk}
                 </span>
                 <span className="font-mono text-[11px] text-slate-500 dark:text-slate-400 font-semibold">
@@ -150,12 +150,12 @@ export const DirectContactPanel: React.FC = () => {
                 </span>
               </div>
             </div>
-            <div className="flex items-center gap-1.5 shrink-0">
+            <div className="flex items-center gap-1.5 shrink-0 self-end sm:self-center w-full sm:w-auto">
               <a
                 href={`https://wa.me/${phonePkTel.replace('+', '')}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-3.5 py-2 rounded-full bg-[#0B375A] text-white font-mono text-xs font-bold flex items-center gap-1 hover:bg-[#07243D] transition-all shadow-sm"
+                className="px-3.5 py-2 rounded-full bg-[#0B375A] text-white font-mono text-xs font-bold flex items-center justify-center gap-1 hover:bg-[#07243D] transition-all shadow-sm w-full sm:w-auto"
               >
                 <span className="material-symbols-outlined text-sm">chat</span> WhatsApp
               </a>

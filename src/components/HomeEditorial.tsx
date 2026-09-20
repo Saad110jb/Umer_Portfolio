@@ -72,36 +72,36 @@ export const HomeEditorial: React.FC = () => {
 
   const experienceRows = [
     {
-      date: "2023 — Present",
-      role: "Delivery Director & Principal Architect",
-      organization: "Enterprise Digital Practice • Australia & UAE",
-      description: "Leading sovereign digital transformation portfolios, Azure DevOps ALM governance, and enterprise AI integrations across public and private sectors.",
-      tag: "ENTERPRISE",
-      tagStyle: "bg-teal-50 text-teal-800 dark:bg-teal-950/80 dark:text-teal-300 border-teal-200/80 dark:border-teal-800"
+      date: "2025 — Present",
+      role: "Delivery Manager / Director",
+      organization: "Datanox • Dubai, UAE & Sydney, Australia",
+      description: "Leading enterprise transformation programs and high-stakes government delivery squads across Oceania and the Middle East, steering strategic platform modernizations with multi-agency ICT footprint.",
+      tag: "CURRENT LEADERSHIP",
+      tagStyle: "bg-teal-50 text-teal-800 dark:bg-teal-950/80 dark:text-teal-300 border-teal-200/80 dark:border-teal-800 font-bold"
     },
     {
-      date: "2020 — 2023",
-      role: "Senior Solutions Architect — Power Platform & D365",
-      organization: "Tier-1 Government & Public Sector Initiatives",
-      description: "Architected multi-tenant Microsoft Dynamics 365 solutions, complex Dataverse structures, and high-security compliance systems for government bodies.",
-      tag: "GOVERNMENT",
-      tagStyle: "bg-blue-50 text-blue-800 dark:bg-blue-950/80 dark:text-blue-300 border-blue-200/80 dark:border-blue-800"
-    },
-    {
-      date: "2017 — 2020",
-      role: "Lead Full-Stack & Integration Engineer",
-      organization: "Cloud Engineering Practice",
-      description: "Designed resilient event-driven microservices, REST APIs, and automated enterprise workflow engines for high-volume transactions.",
+      date: "2021 — 2025",
+      role: "Pre-Sales Solution Architect & Lead Consultant",
+      organization: "EPM Partners • Sydney, Australia",
+      description: "Spearheaded enterprise Power Platform architectural blueprints, customer tenders, winning $12M+ contracts, and Center of Excellence (CoE) rollouts across major financial institutions and government accounts.",
       tag: "ARCHITECTURE",
-      tagStyle: "bg-indigo-50 text-indigo-800 dark:bg-indigo-950/80 dark:text-indigo-300 border-indigo-200/80 dark:border-indigo-800"
+      tagStyle: "bg-blue-50 text-blue-800 dark:bg-blue-950/80 dark:text-blue-300 border-blue-200/80 dark:border-blue-800 font-bold"
     },
     {
-      date: "2014 — 2017",
-      role: "Software Engineer & Systems Consultant",
-      organization: "Enterprise Solutions Consultancy",
-      description: "Built custom core business applications, ERP database integrations, and web service layers for enterprise clients.",
+      date: "2019 — 2021",
+      role: "Dynamics CRM & Power Platform Developer",
+      organization: "Hearing Australia • Sydney, Australia",
+      description: "Spearheaded national health services digital modernization, migrating legacy on-premises CRM to secure Dynamics 365 cloud infrastructure with automated CI/CD pipelines.",
+      tag: "CLOUD TRANSFORMATION",
+      tagStyle: "bg-purple-50 text-purple-800 dark:bg-purple-950/80 dark:text-purple-300 border-purple-200/80 dark:border-purple-800 font-bold"
+    },
+    {
+      date: "2017 — 2018",
+      role: "Junior CRM Consultant & Systems Consultant",
+      organization: "A Dot Dynamics & Empower IT Solutions • Sydney, Australia",
+      description: "Configured Dynamics 365 Sales, built custom C# plugins, JavaScript web resources, data models, and 60+ custom SSRS reports across Australian commercial operations.",
       tag: "ENGINEERING",
-      tagStyle: "bg-emerald-50 text-emerald-800 dark:bg-emerald-950/80 dark:text-emerald-300 border-emerald-200/80 dark:border-emerald-800"
+      tagStyle: "bg-emerald-50 text-emerald-800 dark:bg-emerald-950/80 dark:text-emerald-300 border-emerald-200/80 dark:border-emerald-800 font-bold"
     }
   ];
 
@@ -122,14 +122,14 @@ export const HomeEditorial: React.FC = () => {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-500 opacity-75" />
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-teal-600" />
                 </span>
-                <span className="font-mono uppercase tracking-wider text-[11px]">
+                <span className="font-sans uppercase tracking-wider text-[11px] font-bold">
                   AVAILABLE FOR ENTERPRISE CONSULTING & AI STRATEGY
                 </span>
               </div>
 
               {/* Main Executive Typography Hierarchy */}
               <div className="flex flex-col pt-1">
-                <span className="font-mono text-xs uppercase tracking-widest text-teal-700 dark:text-teal-400 font-bold mb-1.5">
+                <span className="font-sans text-xs uppercase tracking-widest text-teal-700 dark:text-teal-400 font-bold mb-1.5">
                   EXECUTIVE PORTFOLIO
                 </span>
                 <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl text-[#0B375A] dark:text-white tracking-tight leading-[1.08] font-extrabold">
@@ -145,44 +145,44 @@ export const HomeEditorial: React.FC = () => {
 
               {/* Narrative Statement */}
               <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed max-w-2xl pt-1">
-                Over 10+ years orchestrating mission-critical digital transformation initiatives across Australia and the UAE. Specializing in enterprise-scale Microsoft Dynamics 365, Power Platform Governance & Centers of Excellence (CoE), custom cloud microservices, and applied AI systems delivering tangible outcomes for government entities and tier-1 corporations.
+                Over 8+ years orchestrating mission-critical digital transformation initiatives across Australia, UAE, Saudi Arabia, and the US. Specializing in enterprise-scale Microsoft Dynamics 365, Power Platform Governance & Centers of Excellence (CoE), custom cloud microservices, and applied AI systems delivering tangible outcomes for government entities and tier-1 corporations.
               </p>
 
               {/* AL ADAA Style Dark Navy Rounded Pill CTA Button Group */}
-              <div className="flex flex-wrap items-center gap-4 pt-4">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 pt-4">
                 <Link
                   to="/skills-projects"
-                  className="inline-flex items-center gap-2.5 bg-[#0B375A] hover:bg-[#07243D] text-white text-sm font-semibold px-7 py-3.5 rounded-full shadow-md transition-all hover:scale-[1.02] active:scale-[0.98]"
+                  className="inline-flex items-center justify-center gap-2.5 bg-[#0B375A] hover:bg-[#07243D] text-white text-sm font-semibold px-7 py-3.5 rounded-full shadow-md transition-all hover:scale-[1.02] active:scale-[0.98] w-full sm:w-auto"
                 >
                   <span>Explore Systems & Projects</span>
                   <span className="material-symbols-outlined text-base">arrow_forward</span>
                 </Link>
                 <Link
                   to="/experience"
-                  className="inline-flex items-center gap-2 bg-slate-100 dark:bg-slate-800 hover:bg-teal-50 dark:hover:bg-slate-700 text-slate-900 dark:text-slate-100 text-sm font-semibold px-6 py-3.5 rounded-full border border-slate-200 dark:border-slate-700 transition-all hover:scale-[1.01]"
+                  className="inline-flex items-center justify-center gap-2 bg-slate-100 dark:bg-slate-800 hover:bg-teal-50 dark:hover:bg-slate-700 text-slate-900 dark:text-slate-100 text-sm font-semibold px-6 py-3.5 rounded-full border border-slate-200 dark:border-slate-700 transition-all hover:scale-[1.01] w-full sm:w-auto"
                 >
                   <span>Career History</span>
                   <span className="material-symbols-outlined text-base">account_tree</span>
                 </Link>
               </div>
 
-              {/* Quick Metrics Stat Ribbon */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 mt-2 border-t border-slate-200/80 dark:border-slate-800">
-                <div className="flex flex-col bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 p-3.5 rounded-2xl shadow-sm">
-                  <span className="font-heading text-2xl sm:text-3xl font-extrabold text-[#0B375A] dark:text-teal-400 tracking-tight">10+</span>
-                  <span className="font-mono text-[11px] text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold mt-0.5">Years Experience</span>
+              {/* Quick Metrics Stat Ribbon (8+ 20+ 50+) */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-4 pt-6 mt-2 border-t border-slate-200/80 dark:border-slate-800">
+                <div className="flex flex-col bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 p-3 sm:p-3.5 rounded-2xl shadow-sm">
+                  <span className="font-heading text-xl sm:text-3xl font-extrabold text-[#0B375A] dark:text-teal-400 tracking-tight">8+</span>
+                  <span className="font-sans text-[10px] sm:text-[11px] text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold mt-0.5">Years Experience</span>
                 </div>
-                <div className="flex flex-col bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 p-3.5 rounded-2xl shadow-sm">
-                  <span className="font-heading text-2xl sm:text-3xl font-extrabold text-[#0B375A] dark:text-teal-400 tracking-tight">$40M+</span>
-                  <span className="font-mono text-[11px] text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold mt-0.5">Portfolio Value</span>
+                <div className="flex flex-col bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 p-3 sm:p-3.5 rounded-2xl shadow-sm">
+                  <span className="font-heading text-xl sm:text-3xl font-extrabold text-[#0B375A] dark:text-teal-400 tracking-tight">20+</span>
+                  <span className="font-sans text-[10px] sm:text-[11px] text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold mt-0.5">Enterprise Deployments</span>
                 </div>
-                <div className="flex flex-col bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 p-3.5 rounded-2xl shadow-sm">
-                  <span className="font-heading text-2xl sm:text-3xl font-extrabold text-[#0B375A] dark:text-teal-400 tracking-tight">100+</span>
-                  <span className="font-mono text-[11px] text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold mt-0.5">Microservices</span>
+                <div className="flex flex-col bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 p-3 sm:p-3.5 rounded-2xl shadow-sm">
+                  <span className="font-heading text-xl sm:text-3xl font-extrabold text-[#0B375A] dark:text-teal-400 tracking-tight">50+</span>
+                  <span className="font-sans text-[10px] sm:text-[11px] text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold mt-0.5">Microservices & APIs</span>
                 </div>
-                <div className="flex flex-col bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 p-3.5 rounded-2xl shadow-sm">
-                  <span className="font-heading text-2xl sm:text-3xl font-extrabold text-teal-700 dark:text-teal-400 tracking-tight">ACS CP</span>
-                  <span className="font-mono text-[11px] text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold mt-0.5">Certified Leader</span>
+                <div className="flex flex-col bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 p-3 sm:p-3.5 rounded-2xl shadow-sm">
+                  <span className="font-heading text-xl sm:text-3xl font-extrabold text-teal-700 dark:text-teal-400 tracking-tight">ACS CP</span>
+                  <span className="font-sans text-[10px] sm:text-[11px] text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold mt-0.5">Certified Leader</span>
                 </div>
               </div>
 
@@ -208,7 +208,7 @@ export const HomeEditorial: React.FC = () => {
                       <span className="font-heading text-xs font-bold text-[#0B375A] dark:text-white">Muhammad Umar Farooq</span>
                       <span className="text-[10px] text-slate-500 dark:text-slate-400">Delivery Director & Solutions Architect</span>
                     </div>
-                    <span className="px-2.5 py-1 rounded-full bg-teal-50 dark:bg-teal-950 text-teal-800 dark:text-teal-300 text-[10px] font-bold border border-teal-200 dark:border-teal-800">
+                    <span className="px-2.5 py-1 rounded-full bg-teal-50 dark:bg-teal-950 text-teal-800 dark:text-teal-300 text-[10px] font-bold border border-teal-200 dark:border-teal-800 font-sans">
                       MACS CP
                     </span>
                   </div>
@@ -225,11 +225,11 @@ export const HomeEditorial: React.FC = () => {
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-5">
               <div className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-teal-700 dark:text-teal-400 text-lg">military_tech</span>
-                <span className="font-mono text-xs text-slate-800 dark:text-slate-200 uppercase tracking-wider font-bold">
+                <span className="font-sans text-xs text-slate-800 dark:text-slate-200 uppercase tracking-wider font-bold">
                   Accredited Enterprise Credentials & Standards
                 </span>
               </div>
-              <span className="font-mono text-xs text-slate-500 dark:text-slate-400 font-semibold">
+              <span className="font-sans text-xs text-slate-600 dark:text-slate-400 font-semibold">
                 Microsoft Certified Solution Architect & Scaled Agile Consultant
               </span>
             </div>
@@ -241,13 +241,13 @@ export const HomeEditorial: React.FC = () => {
                   className="group bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-sm border border-slate-200/80 dark:border-slate-800 hover:border-teal-400 dark:hover:border-teal-600 hover:-translate-y-0.5 hover:shadow-md transition-all flex flex-col justify-between gap-2"
                 >
                   <div className="flex items-center justify-between">
-                    <span className={`font-mono text-xs font-bold ${cred.color}`}>{cred.code}</span>
-                    <span className="px-2 py-0.5 rounded-full bg-teal-50 dark:bg-teal-950 text-teal-800 dark:text-teal-300 text-[9px] font-bold border border-teal-200 dark:border-teal-800">
+                    <span className={`font-sans text-xs font-extrabold ${cred.color}`}>{cred.code}</span>
+                    <span className="px-2 py-0.5 rounded-full bg-teal-50 dark:bg-teal-950 text-teal-800 dark:text-teal-300 text-[9px] font-bold border border-teal-200 dark:border-teal-800 font-sans">
                       {cred.pillTag}
                     </span>
                   </div>
                   <p className="text-xs font-bold text-slate-900 dark:text-slate-100 line-clamp-2">{cred.title}</p>
-                  <span className="font-mono text-[10px] text-slate-500 dark:text-slate-400">{cred.org}</span>
+                  <span className="font-sans text-[10px] text-slate-600 dark:text-slate-400 font-semibold">{cred.org}</span>
                 </div>
               ))}
             </div>
@@ -258,7 +258,7 @@ export const HomeEditorial: React.FC = () => {
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full" id="systems-grid">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
             <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 dark:bg-teal-950 text-teal-800 dark:text-teal-300 font-mono text-[11px] font-bold tracking-wider mb-2 border border-teal-200 dark:border-teal-800">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 dark:bg-teal-950 text-teal-800 dark:text-teal-300 font-sans text-[11px] font-bold tracking-wider mb-2 border border-teal-200 dark:border-teal-800">
                 CORE STRATEGIC ARCHITECTURE PILLARS
               </div>
               <h2 className="font-heading text-3xl sm:text-4xl text-[#0B375A] dark:text-white tracking-tight font-extrabold">
@@ -281,7 +281,7 @@ export const HomeEditorial: React.FC = () => {
                     <div className="w-12 h-12 rounded-2xl bg-teal-50 dark:bg-teal-950/80 text-teal-800 dark:text-teal-300 border border-teal-200 dark:border-teal-800 flex items-center justify-center group-hover:scale-110 transition-transform">
                       <span className="material-symbols-outlined text-2xl">{item.icon}</span>
                     </div>
-                    <span className="px-2.5 py-1 rounded-full bg-teal-50 dark:bg-teal-950 text-teal-800 dark:text-teal-300 text-[10px] font-bold border border-teal-200 dark:border-teal-800">
+                    <span className="px-2.5 py-1 rounded-full bg-teal-50 dark:bg-teal-950 text-teal-800 dark:text-teal-300 text-[10px] font-bold border border-teal-200 dark:border-teal-800 font-sans">
                       {item.badge}
                     </span>
                   </div>
@@ -294,14 +294,14 @@ export const HomeEditorial: React.FC = () => {
                 </div>
 
                 <div className="pt-4 border-t border-slate-100 dark:border-slate-800">
-                  <span className="font-mono text-[10px] text-slate-400 dark:text-slate-500 uppercase tracking-wider block mb-2 font-bold">
+                  <span className="font-sans text-[10px] text-slate-500 dark:text-slate-400 uppercase tracking-wider block mb-2 font-bold">
                     Key Frameworks & Tech
                   </span>
                   <div className="flex flex-wrap gap-1.5">
                     {item.tags.map((t, i) => (
                       <span
                         key={i}
-                        className="rounded-full bg-teal-50/80 dark:bg-teal-950/60 text-teal-800 dark:text-teal-300 border border-teal-200/70 dark:border-teal-800/60 px-3 py-1 text-[11px] font-semibold"
+                        className="rounded-full bg-teal-50/80 dark:bg-teal-950/60 text-teal-800 dark:text-teal-300 border border-teal-200/70 dark:border-teal-800/60 px-3 py-1 text-[11px] font-semibold font-sans"
                       >
                         {t}
                       </span>
@@ -317,7 +317,7 @@ export const HomeEditorial: React.FC = () => {
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
           <div className="bg-teal-50/60 dark:bg-slate-900/60 rounded-3xl p-6 sm:p-10 border border-teal-100 dark:border-slate-800">
             <div className="mb-8">
-              <span className="font-mono text-xs uppercase tracking-widest text-teal-700 dark:text-teal-400 font-bold block mb-1">
+              <span className="font-sans text-xs uppercase tracking-widest text-teal-700 dark:text-teal-400 font-bold block mb-1">
                 DELIVERY METHODOLOGY
               </span>
               <h2 className="font-heading text-2xl sm:text-3xl text-[#0B375A] dark:text-white font-extrabold">
@@ -346,11 +346,11 @@ export const HomeEditorial: React.FC = () => {
           </div>
         </section>
 
-        {/* 5. EXPERIENCE & ANNOUNCEMENTS ROW TIMELINE (AL ADAA Horizontal List Style) */}
+        {/* 5. EXPERIENCE & ANNOUNCEMENTS ROW TIMELINE (Synchronized Dates with Experience Page) */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
             <div>
-              <span className="font-mono text-xs uppercase tracking-widest text-teal-700 dark:text-teal-400 font-bold block mb-1">
+              <span className="font-sans text-xs uppercase tracking-widest text-teal-700 dark:text-teal-400 font-bold block mb-1">
                 CAREER MILESTONES
               </span>
               <h2 className="font-heading text-2xl sm:text-3xl text-[#0B375A] dark:text-white font-extrabold">
@@ -372,7 +372,7 @@ export const HomeEditorial: React.FC = () => {
                 key={index}
                 className="py-5 flex flex-col lg:flex-row lg:items-center justify-between gap-4 hover:bg-slate-50/60 dark:hover:bg-slate-800/40 transition-colors px-3 rounded-lg"
               >
-                <div className="lg:w-48 shrink-0 font-mono text-xs text-slate-500 dark:text-slate-400 font-semibold">
+                <div className="lg:w-48 shrink-0 font-sans text-xs text-slate-600 dark:text-slate-400 font-bold">
                   {row.date}
                 </div>
 
@@ -389,7 +389,7 @@ export const HomeEditorial: React.FC = () => {
                 </div>
 
                 <div className="shrink-0 pt-1 lg:pt-0">
-                  <span className={`px-3 py-1 rounded-full text-[10px] font-bold border ${row.tagStyle}`}>
+                  <span className={`px-3 py-1 rounded-full text-[10px] font-bold border font-sans ${row.tagStyle}`}>
                     {row.tag}
                   </span>
                 </div>
@@ -398,7 +398,7 @@ export const HomeEditorial: React.FC = () => {
           </div>
         </section>
 
-        {/* 6. FOLLOW & SOCIAL CONNECTIONS BANNER (AL ADAA Style Social Bar) */}
+        {/* 6. FOLLOW & SOCIAL CONNECTIONS BANNER */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
           <div className="bg-gradient-to-r from-teal-100 via-teal-50 to-sky-100 dark:from-slate-900 dark:via-teal-950 dark:to-slate-900 rounded-3xl p-6 sm:p-8 border border-teal-200/80 dark:border-slate-800 flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm">
             <div className="flex items-center gap-3">
@@ -420,13 +420,13 @@ export const HomeEditorial: React.FC = () => {
                 href="https://linkedin.com/in/amifar"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 rounded-full bg-white dark:bg-slate-800 hover:bg-[#0B375A] hover:text-white dark:hover:bg-teal-600 text-slate-800 dark:text-slate-200 text-xs font-bold border border-slate-200 dark:border-slate-700 shadow-sm transition-all"
+                className="px-4 py-2 rounded-full bg-white dark:bg-slate-800 hover:bg-[#0B375A] hover:text-white dark:hover:bg-teal-600 text-slate-800 dark:text-slate-200 text-xs font-bold border border-slate-200 dark:border-slate-700 shadow-sm transition-all font-sans"
               >
-                LinkedIn
+                LinkedIn Profile
               </a>
               <Link
                 to="/contact"
-                className="px-5 py-2 rounded-full bg-[#0B375A] text-white hover:bg-[#07243D] text-xs font-bold shadow-md transition-all flex items-center gap-1.5"
+                className="px-5 py-2 rounded-full bg-[#0B375A] text-white hover:bg-[#07243D] text-xs font-bold shadow-md transition-all flex items-center gap-1.5 font-sans"
               >
                 <span>Initiate Contact</span>
                 <span className="material-symbols-outlined text-sm">arrow_forward</span>

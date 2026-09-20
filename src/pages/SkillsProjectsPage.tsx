@@ -461,8 +461,8 @@ export const SkillsProjectsPage: React.FC = () => {
       tags: ['Python', 'LangChain', 'Google Gemini 1.5 Flash', 'ChromaDB', 'sentence-transformers', 'Streamlit', 'MIMIC-IV-Ext', 'RAG']
     },
     {
-      id: 'project-urdu-transformer',
-      title: 'project-urdu-transformer',
+      id: 'the-language-transformer',
+      title: 'The Language Transformer',
       category: 'ai',
       categoryLabel: 'Applied AI & Natural Language Processing',
       subtitle: 'Custom Conversational Urdu Chatbot via From-Scratch Transformer Architecture',
@@ -548,7 +548,7 @@ export const SkillsProjectsPage: React.FC = () => {
         {/* Section 1: Header, Breadcrumbs & Executive Metrics */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-12">
           {/* Breadcrumbs */}
-          <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 mb-4 font-mono">
+          <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 mb-4 font-sans font-medium">
             <Link to="/" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors flex items-center gap-1 font-bold">
               <span className="material-symbols-outlined text-sm">home</span>
               Home
@@ -561,7 +561,7 @@ export const SkillsProjectsPage: React.FC = () => {
           <div className="flex flex-col gap-3 max-w-4xl">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-50/90 dark:bg-teal-950/70 border border-teal-200/80 dark:border-teal-800/80 text-teal-800 dark:text-teal-200 text-xs font-semibold w-fit">
               <span className="material-symbols-outlined text-base">verified</span>
-              <span className="font-mono text-xs uppercase tracking-wider font-bold">
+              <span className="font-sans text-xs uppercase tracking-wider font-bold">
                 CAPABILITIES & TECHNICAL PORTFOLIO
               </span>
             </div>
@@ -569,7 +569,7 @@ export const SkillsProjectsPage: React.FC = () => {
               Enterprise Architecture, Applied AI & Technical Skills
             </h1>
             <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 max-w-3xl leading-relaxed">
-              Over a decade orchestrating sovereign government digital transformations, mission-critical Power Platform & Dynamics 365 enterprise ecosystems, fault-tolerant cloud microservices, and applied cognitive AI systems.
+              Over 8+ years orchestrating sovereign government digital transformations, mission-critical Power Platform & Dynamics 365 enterprise ecosystems, fault-tolerant cloud microservices, and applied cognitive AI systems.
             </p>
           </div>
 
@@ -577,34 +577,34 @@ export const SkillsProjectsPage: React.FC = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
             <div className="group bg-white dark:bg-slate-900 p-5 rounded-2xl shadow-sm border border-slate-200/80 dark:border-slate-800 hover:shadow-lg hover:-translate-y-1 hover:border-teal-400 dark:hover:border-teal-600 transition-all duration-300">
               <div className="flex items-center justify-between">
-                <span className="font-mono text-[10px] text-slate-400 dark:text-slate-500 font-bold uppercase">PRACTICE DOMAINS</span>
+                <span className="font-sans text-[10px] text-slate-400 dark:text-slate-500 font-bold uppercase">PRACTICE DOMAINS</span>
                 <span className="material-symbols-outlined text-teal-700 dark:text-teal-400 text-xl group-hover:scale-110 transition-transform">domain</span>
               </div>
-              <p className="font-heading text-3xl font-extrabold text-[#0B375A] dark:text-white mt-1">5</p>
-              <span className="text-xs text-slate-600 dark:text-slate-400 font-medium">Core Specializations</span>
+              <p className="font-heading text-3xl font-extrabold text-[#0B375A] dark:text-white mt-1">8+</p>
+              <span className="text-xs text-slate-600 dark:text-slate-400 font-medium">Core Specializations & Domains</span>
             </div>
 
             <div className="group bg-white dark:bg-slate-900 p-5 rounded-2xl shadow-sm border border-slate-200/80 dark:border-slate-800 hover:shadow-lg hover:-translate-y-1 hover:border-teal-400 dark:hover:border-teal-600 transition-all duration-300">
               <div className="flex items-center justify-between">
-                <span className="font-mono text-[10px] text-slate-400 dark:text-slate-500 font-bold uppercase">PORTFOLIO TRACK</span>
+                <span className="font-sans text-[10px] text-slate-400 dark:text-slate-500 font-bold uppercase">PORTFOLIO TRACK</span>
                 <span className="material-symbols-outlined text-teal-700 dark:text-teal-400 text-xl group-hover:scale-110 transition-transform">stacks</span>
               </div>
-              <p className="font-heading text-3xl font-extrabold text-[#0B375A] dark:text-teal-400 mt-1">40+</p>
+              <p className="font-heading text-3xl font-extrabold text-[#0B375A] dark:text-teal-400 mt-1">20+</p>
               <span className="text-xs text-slate-600 dark:text-slate-400 font-medium">Enterprise Deployments</span>
             </div>
 
             <div className="group bg-white dark:bg-slate-900 p-5 rounded-2xl shadow-sm border border-slate-200/80 dark:border-slate-800 hover:shadow-lg hover:-translate-y-1 hover:border-teal-400 dark:hover:border-teal-600 transition-all duration-300">
               <div className="flex items-center justify-between">
-                <span className="font-mono text-[10px] text-slate-400 dark:text-slate-500 font-bold uppercase">GOVERNANCE & SLA</span>
+                <span className="font-sans text-[10px] text-slate-400 dark:text-slate-500 font-bold uppercase">SERVICES & APIS</span>
                 <span className="material-symbols-outlined text-teal-700 dark:text-teal-400 text-xl group-hover:scale-110 transition-transform">verified_user</span>
               </div>
-              <p className="font-heading text-3xl font-extrabold text-[#0B375A] dark:text-teal-400 mt-1">100%</p>
-              <span className="text-xs text-slate-600 dark:text-slate-400 font-medium">On-Time Sprint Milestones</span>
+              <p className="font-heading text-3xl font-extrabold text-[#0B375A] dark:text-teal-400 mt-1">50+</p>
+              <span className="text-xs text-slate-600 dark:text-slate-400 font-medium">Microservices & Integrations</span>
             </div>
 
             <div className="group bg-white dark:bg-slate-900 p-5 rounded-2xl shadow-sm border border-slate-200/80 dark:border-slate-800 hover:shadow-lg hover:-translate-y-1 hover:border-teal-400 dark:hover:border-teal-600 transition-all duration-300">
               <div className="flex items-center justify-between">
-                <span className="font-mono text-[10px] text-slate-400 dark:text-slate-500 font-bold uppercase">ALM STANDARD</span>
+                <span className="font-sans text-[10px] text-slate-400 dark:text-slate-500 font-bold uppercase">ALM STANDARD</span>
                 <span className="material-symbols-outlined text-teal-700 dark:text-teal-400 text-xl group-hover:scale-110 transition-transform">hub</span>
               </div>
               <p className="font-heading text-3xl font-extrabold text-[#0B375A] dark:text-teal-400 mt-1">0-Debt</p>
